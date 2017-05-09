@@ -1,0 +1,665 @@
+2017/05/08 07:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/login".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('views/login')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sacvi/index.php?r=views/login
+---
+2017/05/08 08:05:10 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:05:52 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:06:59 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:07:10 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(38): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:07:25 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:08:25 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:09:55 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm." is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), '')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), '', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), '', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), '', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), '', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), '', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), '', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:12:37 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.textField" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('textField')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'textField')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'textField', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'textField', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'textField', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'textField', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'textField', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'textField', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:12:52 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.usuario" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('usuario')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'usuario')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'usuario', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'usuario', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'usuario', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(LoginForm), 'usuario', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'usuario', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'usuario', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:19:18 [error] [php] Illegal string offset 'class' (C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php:1448)
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal()
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(36): TbActiveForm->textFieldGroup()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): SiteController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): SiteController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): SiteController->render()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php?r=site/login
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1448)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1215)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1148)
+2017/05/08 08:31:49 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:32:28 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:33:53 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:34:39 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:36:34 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:36:43 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:37:16 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:37:33 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:37:48 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:38:16 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(32): CActiveForm->textFieldGroup(Object(LoginForm), 'username', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:38:43 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "textFieldGroup".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\site\login.php(37): CComponent->__call('textFieldGroup', Array)
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(37): CActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:39:22 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.prepend" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('prepend')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'prepend')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'prepend', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'prepend', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'prepend', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(LoginForm), 'prepend', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'prepend', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'prepend', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:39:33 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.Username" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CComponent->__get('Username')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(LoginForm), 'Username')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'Username', Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'Username', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'Username', Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(LoginForm), 'Username', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'Username', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\site\login.php(35): TbActiveForm->textFieldGroup(Object(LoginForm), 'Username', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#13 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:42:11 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.labelOptions" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(161): CComponent->__set('labelOptions', '')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(198): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\protected\views\site\login.php(25): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:42:40 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.labelOptions" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(161): CComponent->__set('labelOptions', 'a')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(198): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\protected\views\site\login.php(25): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:47:27 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.labelOptions" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(161): CComponent->__set('labelOptions', 'a')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(198): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\protected\views\site\login.php(25): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:47:39 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.labelOptions" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(161): CComponent->__set('labelOptions', 'a')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(198): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\protected\views\site\login.php(25): CBaseController->beginWidget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#8 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sacvi/index.php?r=site/login
+---
+2017/05/08 08:47:57 [error] [php] Illegal offset type in isset or empty (C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php:334)
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal()
+#1 C:\xampp\htdocs\sacvi\protected\views\site\login.php(33): TbActiveForm->textFieldGroup()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): SiteController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): SiteController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(98): SiteController->render()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php?r=site/login
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1192)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1143)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (389)
+2017/05/09 02:11:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contac".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('contac')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('contac')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contac')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php?r=site/contac
+---

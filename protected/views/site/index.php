@@ -4,17 +4,75 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<h2 class="page-header">Bienvenido a <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h2>
+<div class="row">
+	<!-- panel 1  -->
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="glyphicon glyphicon-usd fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">26</div>
+						<div>New Comments!</div>
+					</div>
+				</div>
+			</div>
+			<a href="">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- panel 2 -->
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-green">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="glyphicon glyphicon-ok fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">26</div>
+						<div>New Comments!</div>
+					</div>
+				</div>
+			</div>
+			<a href="">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- panel 3 -->
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-yellow">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="glyphicon glyphicon-user fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">26</div>
+						<div>New Comments!</div>
+					</div>
+				</div>
+			</div>
+			<a href="">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="glyphicon glyphicon-circle-arrow-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
