@@ -6,6 +6,19 @@
 </head>
 <body>
 <?php
+$dinamycitem=array();
+if(!Yii::app()->user->isGuest){    
+$auth=Yii::app()->authManager;
+$roles = $auth->getRoles(Yii::app()->user->id);
+foreach ($roles as $data) {    
+    $modulos = $auth->getItemChildren($data->name);
+    foreach ($modulos as $modulo) {    
+        $dinamycitem [] = array('label'=>$modulo->name, 'url'=>array('/'.$modulo->name.'/admin'));
+    }
+}
+}
+?>
+<?php
 $this->widget(
     'booster.widgets.TbNavbar',
     array(
@@ -19,11 +32,7 @@ $this->widget(
             array(
                 'class' => 'booster.widgets.TbMenu',
             	'type' => 'navbar',
-                'items' => array(
-                    array('label' => 'Home', 'url' => array('/site/index'), 'active' => true),
-                    array('label' => 'About', 'url' => array('/site/page', 'view'=>'about')),
-                    array('label'=>'Contact', 'url'=>array('/site/contact')),
-                ),
+                'items' => $dinamycitem,
             ),            
             array(
                 'class' => 'booster.widgets.TbMenu',
