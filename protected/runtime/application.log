@@ -663,3 +663,30 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/sacvi/index.php?r=site/contac
 ---
+2017/05/30 05:05:58 [error] [exception.CException] exception 'CException' with message 'Property "TbMenu.itemOptions" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(161): CComponent->__set('itemOptions', Array)
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UsuariosController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(181): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\column2.php(13): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\sacvi\protected\controllers\UsuariosController.php(148): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/sacvi/index.php/usuarios/admin
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/usuarios/admin
+---
