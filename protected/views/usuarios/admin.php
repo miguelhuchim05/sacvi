@@ -38,13 +38,14 @@ return false;
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('booster.widgets.TbGridView',array(
+<?php $this->widget('booster.widgets.TbExtendedGridView',array(
 'id'=>'usuarios-grid',
 'type' => 'striped bordered condensed',
 'dataProvider'=>$model->search(),
 'filter'=>$model,
-'columns'=>array(
-		'ID_USUARIO',
+'responsiveTable'=>true,
+'columns'=>array(		
+		array('name'=>'ID_USUARIO', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
 		'FULL_NAME',
 		'USER_NAME',
 		'PASSWORD_',
@@ -52,6 +53,7 @@ return false;
 		'CELULAR',
 array(
 'class'=>'booster.widgets.TbButtonColumn',
+'header'=>'Acciones',
 ),
 ),
 )); ?>

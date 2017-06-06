@@ -3,7 +3,7 @@
 	'method'=>'get',
 )); ?>
 
-		<?php echo $form->textFieldGroup($model,'ID_USUARIO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+		<?php /*echo $form->textFieldGroup($model,'ID_USUARIO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5'))));*/ ?>
 
 		<?php echo $form->textFieldGroup($model,'FULL_NAME',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>80)))); ?>
 

@@ -31,3 +31,7 @@
 .panel-yellow > a{
 	color: #f0ad4e;
 }
+/*Gridview*/
+.btn-pad{
+  margin: 5px;
+}
