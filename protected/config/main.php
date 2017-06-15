@@ -31,7 +31,7 @@ return array(
 	),
 
 	// application components
-	'components'=>array(
+	'components'=>array(	
 		'booster' => array(
 			'class' => 'ext.booster.components.Booster'),
 		'user'=>array(

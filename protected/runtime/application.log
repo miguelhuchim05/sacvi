@@ -4848,3 +4848,398 @@ REQUEST_URI=/sacvi/index.php/rutas/create
 in C:\xampp\htdocs\sacvi\protected\views\rutas\_form.php (22)
 in C:\xampp\htdocs\sacvi\protected\views\rutas\create.php (15)
 in C:\xampp\htdocs\sacvi\protected\controllers\RutasController.php (78)
+2017/06/12 05:22:25 [error] [exception.CException] exception 'CException' with message 'Property "Clientes.ID_COBRATARIO" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ID_COBRATARIO')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('ID_COBRATARIO')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1994): CHtml::resolveValue(Object(Clientes), 'ID_COBRATARIO')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(914): CHtml::activeDropDownList(Object(Clientes), 'ID_COBRATARIO', Array, Array)
+#4 [internal function]: CActiveForm->dropDownList(Object(Clientes), 'ID_COBRATARIO', Array, Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(Clientes), 'ID_COBRATARIO', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(627): TbActiveForm->customFieldGroupInternal(Array, Object(Clientes), 'ID_COBRATARIO', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php(32): TbActiveForm->dropDownListGroup(Object(Clientes), 'ID_COBRATARIO', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\sacvi\protected\views\clientes\create.php(15): CController->renderPartial('_form', Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#17 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(78): CController->render('create', Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('create')
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#29 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/sacvi/index.php/clientes/create
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/admin
+---
+2017/06/12 05:22:42 [error] [exception.CException] exception 'CException' with message 'Property "Clientes.ID_COBRATARIO" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ID_COBRATARIO')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('ID_COBRATARIO')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1994): CHtml::resolveValue(Object(Clientes), 'ID_COBRATARIO')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(914): CHtml::activeDropDownList(Object(Clientes), 'ID_COBRATARIO', Array, Array)
+#4 [internal function]: CActiveForm->dropDownList(Object(Clientes), 'ID_COBRATARIO', Array, Array)
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(Clientes), 'ID_COBRATARIO', Array)
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(627): TbActiveForm->customFieldGroupInternal(Array, Object(Clientes), 'ID_COBRATARIO', Array)
+#8 C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php(32): TbActiveForm->dropDownListGroup(Object(Clientes), 'ID_COBRATARIO', Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\sacvi\protected\views\clientes\create.php(15): CController->renderPartial('_form', Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#17 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(78): CController->render('create', Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('create')
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/create')
+#29 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/sacvi/index.php/clientes/create
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/admin
+---
+2017/06/12 05:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getBarrios".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('getBarrios')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 05:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getBarrios".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('getBarrios')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 05:55:54 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(163): renderAttributes()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(2016): tag()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(914): activeDropDownList()
+#3 unknown(0): TbActiveForm->dropDownList()
+#4 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array()
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup()
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(627): TbActiveForm->customFieldGroupInternal()
+#7 C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php(39): TbActiveForm->dropDownListGroup()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#11 C:\xampp\htdocs\sacvi\protected\views\clientes\create.php(15): ClientesController->renderPartial()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#16 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(78): ClientesController->render()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/create
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1293)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1152)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (627)
+2017/06/12 05:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getBarrios".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('getBarrios')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 05:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getBarrios".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('getBarrios')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 05:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getBarrios".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('getBarrios')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 06:00:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 06:00:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 06:04:54 [error] [php] Undefined index: id (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:152)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (152)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:06:00 [error] [php] Undefined index: ID_LOCALIDAD (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:07:24 [error] [php] Undefined index: ID_LOCALIDAD (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:07:34 [error] [php] Undefined index: ID_LOCALIDAD (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:08:17 [error] [php] Undefined index: clientes-form (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:10:16 [error] [php] Undefined index: clientes (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:153)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:13:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_cliente' in 'where clause'. The SQL statement executed was: SELECT * FROM `barrios` `t` WHERE id_cliente = :id_localidad.
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (153)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/12 06:13:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_cliente' in 'where clause'. The SQL statement executed was: SELECT * FROM `barrios` `t` WHERE id_cliente = :id_localidad' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(153): CActiveRecord->findAll('id_cliente = :i...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): ClientesController->actionGetBarrios()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('getBarrios')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/getBar...')
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/clientes/create
+---
+2017/06/12 06:28:58 [error] [php] Undefined variable: descripcion (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:159)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (159)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/06/13 19:39:23 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(181): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(48): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/06/13 19:40:53 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(181): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(48): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---

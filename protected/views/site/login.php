@@ -65,7 +65,7 @@ $this->breadcrumbs=array(
 			'booster.widgets.TbButton',
 			array('buttonType' => 'submit', 'context' => 'success', 'label' => 'Login')
 			);
-	?>		
+	?>
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->

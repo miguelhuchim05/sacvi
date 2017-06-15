@@ -9,9 +9,50 @@
 
 	<?php echo $form->textFieldGroup($model,'NOMBRE',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>80)))); ?>
 	
-	<?php echo $form->textFieldGroup($model,'ID_LOCALIDAD',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
+	<?php /*echo $form->textFieldGroup($model,'ID_LOCALIDAD',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5'))));*/ ?>
+	<?php
+	//paso 1 obtener lista
+	$models = Localidades::model()->findAll();
+	//paso 2 se crea arreglo list data
+	$list = CHtml::listData($models, 
+                'ID_LOCALIDAD', 'NOMBRE');
+	//PASO 3 se crea el dropdownlist
+	echo $form->dropDownListGroup(
+			$model,
+			'ID_LOCALIDAD',
+			array(
+				/*'wrapperHtmlOptions' => array(
+					'class' => 'col-sm-5',
+				),*/
+				'widgetOptions' => array(
+					'data' => $list,
+					//'htmlOptions' => array('empty' => 'Seleccionar cobratario'),
+					'htmlOptions' => array(
+						'ajax' => array(
+							'type' => 'POST',
+							'url' => CController::createUrl('clientes/getBarrios'),
+							'update' => '#'.CHtml::activeId($model,'ID_BARRIO'),
+						),//fin de ajax
+						'empty' => 'Seleccionar cobratario',
+					),//fin de options
+				)
+			)
+		);
+	?>
 
-	<?php echo $form->textFieldGroup($model,'ID_BARRIO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>	
+	<?php /*echo $form->textFieldGroup($model,'ID_BARRIO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5'))));*/ ?>
+	<?php
+	//paso 1 obtener lista
+	$models = Localidades::model()->findAll();
+	//paso 2 se crea arreglo list data
+	$list = CHtml::listData($models, 
+                'ID_LOCALIDAD', 'NOMBRE');
+	//PASO 3 se crea el dropdownlist
+	echo $form->dropDownListGroup(
+			$model,
+			'ID_BARRIO',array()			
+		);
+	?>
 
 	<?php echo $form->textFieldGroup($model,'DIRECCION',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>80)))); ?>
 

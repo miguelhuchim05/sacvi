@@ -1,6 +1,6 @@
 <?php
 
-class ClientesController extends Controller
+class ProveedoresController extends Controller
 {
 /**
 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -31,7 +31,7 @@ array('allow',  // allow all users to perform 'index' and 'view' actions
 'users'=>array('*'),
 ),
 array('allow', // allow authenticated user to perform 'create' and 'update' actions
-'actions'=>array('create','update','getBarrios'),
+'actions'=>array('create','update'),
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -61,16 +61,16 @@ $this->render('view',array(
 */
 public function actionCreate()
 {
-$model=new Clientes;
+$model=new Proveedores;
 
 // Uncomment the following line if AJAX validation is needed
 // $this->performAjaxValidation($model);
 
-if(isset($_POST['Clientes']))
+if(isset($_POST['Proveedores']))
 {
-$model->attributes=$_POST['Clientes'];
+$model->attributes=$_POST['Proveedores'];
 if($model->save())
-$this->redirect(array('view','id'=>$model->ID_CLIENTE));
+$this->redirect(array('view','id'=>$model->ID_PROVEEDOR));
 }
 
 $this->render('create',array(
@@ -90,11 +90,11 @@ $model=$this->loadModel($id);
 // Uncomment the following line if AJAX validation is needed
 // $this->performAjaxValidation($model);
 
-if(isset($_POST['Clientes']))
+if(isset($_POST['Proveedores']))
 {
-$model->attributes=$_POST['Clientes'];
+$model->attributes=$_POST['Proveedores'];
 if($model->save())
-$this->redirect(array('view','id'=>$model->ID_CLIENTE));
+$this->redirect(array('view','id'=>$model->ID_PROVEEDOR));
 }
 
 $this->render('update',array(
@@ -127,7 +127,7 @@ throw new CHttpException(400,'Invalid request. Please do not repeat this request
 */
 public function actionIndex()
 {
-$dataProvider=new CActiveDataProvider('Clientes');
+$dataProvider=new CActiveDataProvider('Proveedores');
 $this->render('index',array(
 'dataProvider'=>$dataProvider,
 ));
@@ -138,27 +138,16 @@ $this->render('index',array(
 */
 public function actionAdmin()
 {
-$model=new Clientes('search');
+$model=new Proveedores('search');
 $model->unsetAttributes();  // clear any default values
-if(isset($_GET['Clientes']))
-$model->attributes=$_GET['Clientes'];
+if(isset($_GET['Proveedores']))
+$model->attributes=$_GET['Proveedores'];
 
 $this->render('admin',array(
 'model'=>$model,
 ));
 }
-//peticion ajax para filtrar barrios 
-public function actionGetBarrios(){
-	$id_localidad = $_POST['Clientes']['ID_LOCALIDAD'];
-	$lista = Barrios::model()->findAll('ID_LOCALIDAD = :id_localidad',array(':id_localidad'=>$id_localidad));
-	$lista = CHtml::listData($lista,'ID_BARRIO','NOMBRE');
-	
-	echo CHtml::tag('option', array('value' => ''), 'Seleccionar barrio', true);
-	
-	foreach ($lista as $valor => $descripcion){
-	    echo CHtml::tag('option',array('value'=>$valor),CHtml::encode($descripcion), true );	    
-	}
-}
+
 /**
 * Returns the data model based on the primary key given in the GET variable.
 * If the data model is not found, an HTTP exception will be raised.
@@ -166,7 +155,7 @@ public function actionGetBarrios(){
 */
 public function loadModel($id)
 {
-$model=Clientes::model()->findByPk($id);
+$model=Proveedores::model()->findByPk($id);
 if($model===null)
 throw new CHttpException(404,'The requested page does not exist.');
 return $model;
@@ -178,7 +167,7 @@ return $model;
 */
 protected function performAjaxValidation($model)
 {
-if(isset($_POST['ajax']) && $_POST['ajax']==='clientes-form')
+if(isset($_POST['ajax']) && $_POST['ajax']==='proveedores-form')
 {
 echo CActiveForm::validate($model);
 Yii::app()->end();
