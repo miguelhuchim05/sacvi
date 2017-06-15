@@ -69,6 +69,7 @@ $model=new Usuarios;
 if(isset($_POST['Usuarios']))
 {
 $model->attributes=$_POST['Usuarios'];
+$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
 if($model->save())
 $this->redirect(array('view','id'=>$model->ID_USUARIO));
 }
@@ -93,6 +94,7 @@ $model=$this->loadModel($id);
 if(isset($_POST['Usuarios']))
 {
 $model->attributes=$_POST['Usuarios'];
+$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
 if($model->save())
 $this->redirect(array('view','id'=>$model->ID_USUARIO));
 }
