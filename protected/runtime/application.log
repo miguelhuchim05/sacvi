@@ -5320,3 +5320,48 @@ Stack trace:
 REQUEST_URI=/sacvi/index.php/usuarios/update/2
 HTTP_REFERER=http://localhost:8080/sacvi/index.php/usuarios/update/2
 ---
+2017/06/29 20:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hdcompras/admin".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/admin')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/admin
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/cobratarios/admin
+---
+2017/06/29 21:04:30 [error] [php] include(Articulos.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(397): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(616): model()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CSort.php(330): DtCompras->getAttributeLabel()
+#3 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbDataColumn.php(37): CSort->resolveLabel()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\zii\widgets\grid\CGridColumn.php(130): TbDataColumn->renderHeaderCellContent()
+#5 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php(177): TbDataColumn->renderHeaderCell()
+#6 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php(128): TbGridView->writeResponsiveCss()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#8 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php(68): TbGridView->init()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(147): TbGridView->init()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(181): DtComprasController->createWidget()
+#11 C:\xampp\htdocs\sacvi\protected\views\dtCompras\admin.php(56): DtComprasController->widget()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): DtComprasController->renderInternal()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): DtComprasController->renderFile()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): DtComprasController->renderPartial()
+#16 C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php(148): DtComprasController->render()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): DtComprasController->actionAdmin()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): DtComprasController->runAction()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): DtComprasController->filterAccessControl()
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): DtComprasController->runActionWithFilters()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): DtComprasController->run()
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/dtcompras/admin
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbDataColumn.php (37)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php (177)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php (128)
