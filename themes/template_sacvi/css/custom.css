@@ -33,5 +33,20 @@
 }
 /*Gridview*/
 .btn-pad{
-  margin: 5px;
+	margin: 0 5px 0 5px;	
+}
+#action-buttons{
+	padding: 0 5px 0 5px;
+	font-size: 15px;
+}
+/* =============================================================
+detail view
+ ============================================================ */
+.contact-info span {
+    font-size:15px;
+    padding:0px 8px 0px 8px;
+}
+.contact-info hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

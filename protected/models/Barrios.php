@@ -31,7 +31,7 @@ class Barrios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_LOCALIDAD', 'required'),
+			array('ID_LOCALIDAD,NOMBRE', 'required'),
 			array('ID_LOCALIDAD', 'numerical', 'integerOnly'=>true),
 			array('NOMBRE', 'length', 'max'=>50),
 			// The following rule is used by search().

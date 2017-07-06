@@ -1,6 +1,9 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'id'=>'hd-compras-form',
-	'enableAjaxValidation'=>false,
+	'type' => 'horizontal',
+	'enableClientValidation'=>true,
+	'htmlOptions' => array('class' => 'well'), // for inset effect
+	'enableAjaxValidation'=>false,	
 )); ?>
 
 <p class="help-block">Fields with <span class="required">*</span> are required.</p>

@@ -1,5 +1,8 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'id'=>'barrios-form',
+	'type' => 'horizontal',
+	'enableClientValidation'=>true,
+	'htmlOptions' => array('class' => 'well'), // for inset effect
 	'enableAjaxValidation'=>false,
 )); ?>
 <?php echo $form->errorSummary($model); ?>

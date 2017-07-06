@@ -56,6 +56,29 @@ return false;
 		*/
 array(
 'class'=>'booster.widgets.TbButtonColumn',
+'header'=>'Acciones',
+'deleteConfirmation'=>"js:'El registro #'+$(this).parent().parent().children(':first-child').text()+' Será eliminado! Continuar?'",
+    'afterDelete'=>'function(link,success,data){ if(success) $.notify("Eliminado", "info");}',
+'htmlOptions' => array(
+        'style' => 'width:110px;text-align: center;',
+        ),
+'buttons' => array(
+	'view' => array(
+		'options' => array(
+                'id' => 'action-buttons',
+                ),
+		),
+	'update' => array(
+		'options' => array(
+                'id' => 'action-buttons',
+                ),
+		),
+	'delete' => array(
+		'options' => array(
+                'id' => 'action-buttons',
+                ),
+		),
+	),
 ),
 ),
 )); ?>

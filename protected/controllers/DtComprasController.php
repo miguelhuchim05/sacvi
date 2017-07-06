@@ -35,7 +35,7 @@ array('allow', // allow authenticated user to perform 'create' and 'update' acti
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
-'actions'=>array('admin','delete'),
+'actions'=>array('admin','delete', 'recordCU'),
 'users'=>array('admin'),
 ),
 array('deny',  // deny all users
@@ -54,7 +54,28 @@ $this->render('view',array(
 'model'=>$this->loadModel($id),
 ));
 }
-
+/**
+* Creates or update a particular model.
+*/
+public function actionrecordCU(){
+	header('Content-Type: application/json; charset="UTF-8"');
+	$send = array();
+	if(isset($_POST['DtCompras']) && $_POST['DtCompras']['ID_DTCOMPRAS']!=null){
+		$model = $this->loadModel($_POST['DtCompras']['ID_DTCOMPRAS']);
+		$model->attributes=$_POST['DtCompras'];
+		$send = "Actualizado";
+	}else{
+		$model=new DtCompras;
+		if(isset($_POST['DtCompras'])){
+			$model->attributes=$_POST['DtCompras'];
+			$send = "Creado";
+		}
+	}
+	//respuesta 
+	if($model->save()){			
+		echo CJSON::encode($send);
+	}
+}
 /**
 * Creates a new model.
 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -86,20 +107,8 @@ $this->render('create',array(
 public function actionUpdate($id)
 {
 $model=$this->loadModel($id);
-
-// Uncomment the following line if AJAX validation is needed
-// $this->performAjaxValidation($model);
-
-if(isset($_POST['DtCompras']))
-{
-$model->attributes=$_POST['DtCompras'];
-if($model->save())
-$this->redirect(array('view','id'=>$model->ID_DTCOMPRAS));
-}
-
-$this->render('update',array(
-'model'=>$model,
-));
+header('Content-Type: application/json; charset="UTF-8"');
+echo CJSON::encode($model);
 }
 
 /**

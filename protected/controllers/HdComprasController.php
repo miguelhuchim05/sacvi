@@ -50,8 +50,15 @@ array('deny',  // deny all users
 */
 public function actionView($id)
 {
+//parte de modeldt
+$model=new DtCompras();
+$model->unsetAttributes();  // clear any default values
+$model->ID_COMPRA = $id;
+//fin parte modeldt
 $this->render('view',array(
 'model'=>$this->loadModel($id),
+'modeldtFilter'=>$this->loadModelDt($id),
+'modeldt'=>$model,
 ));
 }
 
@@ -160,7 +167,18 @@ if($model===null)
 throw new CHttpException(404,'The requested page does not exist.');
 return $model;
 }
-
+public function loadModelDt($id)
+{
+$dataProvider = new CActiveDataProvider('DtCompras',array(
+	'criteria' => array(
+		'condition'=>'ID_COMPRA='.$id,
+		)
+	));
+if($dataProvider===null){
+	throw new CHttpException(404,'The requested page does not exist.');
+}
+return $dataProvider;
+}
 /**
 * Performs the AJAX validation.
 * @param CModel the model to be validated

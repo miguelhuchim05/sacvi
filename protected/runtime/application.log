@@ -5365,3 +5365,786 @@ REQUEST_URI=/sacvi/index.php/dtcompras/admin
 in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbDataColumn.php (37)
 in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php (177)
 in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbGridView.php (128)
+2017/07/05 02:51:35 [error] [php] Undefined variable: modeldtFilter (C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php:48)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): HdComprasController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): HdComprasController->renderPartial()
+#2 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(55): HdComprasController->render()
+#3 unknown(0): HdComprasController->actionView()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): HdComprasController->runAction()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): HdComprasController->filterAccessControl()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): HdComprasController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): HdComprasController->run()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/hdcompras/10
+in C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php (48)
+in C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php (55)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 02:53:09 [error] [php] Undefined variable: modeldt (C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): HdComprasController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): HdComprasController->renderPartial()
+#2 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(56): HdComprasController->render()
+#3 unknown(0): HdComprasController->actionView()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): HdComprasController->runAction()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): HdComprasController->filterAccessControl()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): HdComprasController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): HdComprasController->run()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/hdcompras/10
+in C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php (117)
+in C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php (56)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 02:54:23 [error] [exception.CException] exception 'CException' with message 'HdComprasController cannot find the requested view "../dtcompras/_addArticulo".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php(118): CController->renderPartial('../dtcompras/_a...', Array)
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(62): CController->render('view', Array)
+#6 [internal function]: HdComprasController->actionView('10')
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HdComprasController), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HdComprasController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/view')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/10
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/admin
+---
+2017/07/05 04:01:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php:110
+Stack trace:
+#0 [internal function]: DtComprasController->actionDelete('504')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DtComprasController), Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DtComprasController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/504
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:19:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php:110
+Stack trace:
+#0 [internal function]: DtComprasController->actionDelete('504')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DtComprasController), Array)
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DtComprasController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/504
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "record".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('record')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('record')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/record
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "record".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('record')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('record')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/record
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "record".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('record')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('record')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/record
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:53:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:53:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:54:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:55:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:55:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:55:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:56:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:56:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 04:56:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CWebUser.php:396
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(181): CWebUser->loginRequired()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/delet...')
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/delete/501?ajax=dt-compras-grid
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 05:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "record".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('record')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('record')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/record
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 05:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "record".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('record')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('record')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/record
+HTTP_REFERER=http://192.168.0.107:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 05:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "recordCU".' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(270): CController->missingAction('recordCU')
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('recordCU')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('dtcompras/recor...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sacvi/index.php/dtcompras/recordCU
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/4
+---
+2017/07/05 05:56:34 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (65)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 05:57:06 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (65)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 05:57:44 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (65)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 05:58:23 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (70)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 06:00:13 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (65)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 06:13:00 [error] [exception.CException] exception 'CException' with message 'Property "HdCompras.STATUS" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(145): CComponent->__get('STATUS')
+#1 C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php(24): CActiveRecord->__get('STATUS')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(62): CController->render('view', Array)
+#7 [internal function]: HdComprasController->actionView('4')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HdComprasController), Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HdComprasController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/view')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/4
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/admin
+---
+2017/07/05 06:13:09 [error] [exception.CException] exception 'CException' with message 'Property "HdCompras.ESTATUS" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ESTATUS')
+#1 C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php(24): CActiveRecord->__get('ESTATUS')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(62): CController->render('view', Array)
+#7 [internal function]: HdComprasController->actionView('4')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HdComprasController), Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HdComprasController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/view')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/4
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/admin
+---
+2017/07/05 06:13:44 [error] [exception.CException] exception 'CException' with message 'Property "HdCompras.ESTATUS" is not defined.' in C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ESTATUS')
+#1 C:\xampp\htdocs\sacvi\protected\views\hdCompras\view.php(24): CActiveRecord->__get('ESTATUS')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(62): CController->render('view', Array)
+#7 [internal function]: HdComprasController->actionView('4')
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HdComprasController), Array)
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HdComprasController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/view')
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/4
+HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/admin
+---
+2017/07/05 06:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php:167
+Stack trace:
+#0 C:\xampp\htdocs\sacvi\protected\controllers\HdComprasController.php(59): HdComprasController->loadModel('24')
+#1 [internal function]: HdComprasController->actionView('24')
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HdComprasController), Array)
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HdComprasController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController('hdcompras/view')
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sacvi/index.php/hdcompras/24
+---
+2017/07/05 07:17:10 [error] [php] include(PASSWORD_.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php(303): class_exists()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\validators\CValidator.php(174): import()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(287): createValidator()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(260): Usuarios->createValidators()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(304): Usuarios->getValidators()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php(1520): Usuarios->isAttributeRequired()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(600): activeLabelEx()
+#8 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1223): TbActiveForm->labelEx()
+#9 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup()
+#10 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal()
+#11 C:\xampp\htdocs\sacvi\protected\views\usuarios\_form.php(12): TbActiveForm->textFieldGroup()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): UsuariosController->renderInternal()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): UsuariosController->renderFile()
+#15 C:\xampp\htdocs\sacvi\protected\views\usuarios\create.php(15): UsuariosController->renderPartial()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): UsuariosController->renderInternal()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): UsuariosController->renderFile()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): UsuariosController->renderPartial()
+#20 C:\xampp\htdocs\sacvi\protected\controllers\UsuariosController.php(79): UsuariosController->render()
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#30 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): UsuariosController->run()
+#31 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/usuarios/create
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1223)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (1148)
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (389)
+2017/07/05 07:27:18 [error] [php] include(tel.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\YiiBase.php(303): class_exists()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\validators\CValidator.php(174): import()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(287): createValidator()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(260): Usuarios->createValidators()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CModel.php(547): Usuarios->getValidators()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\widgets\CActiveForm.php(567): Usuarios->getSafeAttributeNames()
+#7 C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php(173): TbActiveForm->errorSummary()
+#8 C:\xampp\htdocs\sacvi\protected\views\usuarios\_form.php(11): TbActiveForm->errorSummary()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): UsuariosController->renderInternal()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): UsuariosController->renderFile()
+#12 C:\xampp\htdocs\sacvi\protected\views\usuarios\create.php(15): UsuariosController->renderPartial()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): UsuariosController->renderInternal()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): UsuariosController->renderFile()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): UsuariosController->renderPartial()
+#17 C:\xampp\htdocs\sacvi\protected\controllers\UsuariosController.php(79): UsuariosController->render()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): UsuariosController->actionCreate()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#21 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#24 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): UsuariosController->run()
+#28 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/usuarios/create
+in C:\xampp\htdocs\sacvi\protected\extensions\booster\widgets\TbActiveForm.php (173)
+in C:\xampp\htdocs\sacvi\protected\views\usuarios\_form.php (11)
+in C:\xampp\htdocs\sacvi\protected\views\usuarios\create.php (15)
+2017/07/05 08:19:28 [error] [php] Array to string conversion (C:\xampp\htdocs\sacvi\protected\controllers\UsuariosController.php:75)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): UsuariosController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): UsuariosController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/usuarios/create
+in C:\xampp\htdocs\sacvi\protected\controllers\UsuariosController.php (75)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 09:21:24 [error] [php] Undefined variable: form (C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#1 C:\xampp\htdocs\sacvi\protected\views\clientes\create.php(15): ClientesController->renderPartial()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(78): ClientesController->render()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(49): ClientesController->actionCreate()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/create
+in C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php (21)
+in C:\xampp\htdocs\sacvi\protected\views\clientes\create.php (15)
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (78)
+2017/07/05 09:51:18 [error] [php] Object of class Clientes could not be converted to string (C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#1 C:\xampp\htdocs\sacvi\protected\views\clientes\update.php(18): ClientesController->renderPartial()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(102): ClientesController->render()
+#7 unknown(0): ClientesController->actionUpdate()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/update/4
+in C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php (8)
+in C:\xampp\htdocs\sacvi\protected\views\clientes\update.php (18)
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (102)
+2017/07/05 09:51:39 [error] [php] Object of class Clientes could not be converted to string (C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#1 C:\xampp\htdocs\sacvi\protected\views\clientes\update.php(18): ClientesController->renderPartial()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(102): ClientesController->render()
+#7 unknown(0): ClientesController->actionUpdate()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/update/4
+in C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php (8)
+in C:\xampp\htdocs\sacvi\protected\views\clientes\update.php (18)
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (102)
+2017/07/05 09:52:18 [error] [php] Object of class Clientes could not be converted to string (C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#1 C:\xampp\htdocs\sacvi\protected\views\clientes\update.php(18): ClientesController->renderPartial()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(102): ClientesController->render()
+#7 unknown(0): ClientesController->actionUpdate()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/update/4
+in C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php (8)
+in C:\xampp\htdocs\sacvi\protected\views\clientes\update.php (18)
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (102)
+2017/07/05 09:52:30 [error] [php] Object of class Clientes could not be converted to string (C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#1 C:\xampp\htdocs\sacvi\protected\views\clientes\update.php(18): ClientesController->renderPartial()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CBaseController.php(95): ClientesController->renderInternal()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(872): ClientesController->renderFile()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(785): ClientesController->renderPartial()
+#6 C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php(102): ClientesController->render()
+#7 unknown(0): ClientesController->actionUpdate()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#12 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#15 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#19 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/update/4
+in C:\xampp\htdocs\sacvi\protected\views\clientes\_form.php (8)
+in C:\xampp\htdocs\sacvi\protected\views\clientes\update.php (18)
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (102)
+2017/07/05 10:01:36 [error] [php] Undefined variable: model (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:156)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (156)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 10:01:58 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:156)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (156)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 10:18:18 [error] [php] Array to string conversion (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:157)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (157)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 10:18:50 [error] [php] Array to string conversion (C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\helpers\CHtml.php:163)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (157)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/05 10:32:45 [error] [php] Undefined index: ID_BARRIO (C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php:155)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(134): ClientesController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(58): ClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CController.php(265): ClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(282): ClientesController->run()
+#8 C:\xampp\htdocs\yii-1.1.18.018a89\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.18.018a89\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\sacvi\index.php(13): CWebApplication->run()
+REQUEST_URI=/sacvi/index.php/clientes/getBarrios
+in C:\xampp\htdocs\sacvi\protected\controllers\ClientesController.php (155)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/06 05:26:08 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (70)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/06 05:26:30 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (65)
+in C:\xampp\htdocs\sacvi\index.php (13)

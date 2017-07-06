@@ -1,5 +1,17 @@
+<?php
+if(!$model->isNewRecord){
+	Yii::app()->clientScript->registerScript('select', "		
+	$('#Clientes_ID_LOCALIDAD').ready(function(){
+	    $('select[name=\'Clientes[ID_LOCALIDAD]\'').trigger('change');	    
+	});
+	");
+}
+?>
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'id'=>'clientes-form',
+	'type' => 'horizontal',
+	'enableClientValidation'=>true,
+	'htmlOptions' => array('class' => 'well'), // for inset effect
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -42,15 +54,15 @@
 
 	<?php /*echo $form->textFieldGroup($model,'ID_BARRIO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5'))));*/ ?>
 	<?php
-	//paso 1 obtener lista
+	/*//paso 1 obtener lista
 	$models = Localidades::model()->findAll();
 	//paso 2 se crea arreglo list data
 	$list = CHtml::listData($models, 
-                'ID_LOCALIDAD', 'NOMBRE');
+                'ID_LOCALIDAD', 'NOMBRE');*/
 	//PASO 3 se crea el dropdownlist
 	echo $form->dropDownListGroup(
 			$model,
-			'ID_BARRIO',array()			
+			'ID_BARRIO',array()
 		);
 	?>
 

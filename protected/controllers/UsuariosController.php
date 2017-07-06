@@ -69,8 +69,10 @@ $model=new Usuarios;
 if(isset($_POST['Usuarios']))
 {
 $model->attributes=$_POST['Usuarios'];
-$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
-if($model->save())
+if($model->validate('PASSWORD_')){
+	$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
+}
+if($model->validate())
 $this->redirect(array('view','id'=>$model->ID_USUARIO));
 }
 
@@ -87,18 +89,20 @@ $this->render('create',array(
 public function actionUpdate($id)
 {
 $model=$this->loadModel($id);
-
+$model->PASSWORD_=null;
 // Uncomment the following line if AJAX validation is needed
 // $this->performAjaxValidation($model);
 
-if(isset($_POST['Usuarios']))
-{
-$model->attributes=$_POST['Usuarios'];
-$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
-if($model->save())
-$this->redirect(array('view','id'=>$model->ID_USUARIO));
+if(isset($_POST['Usuarios'])){
+	if(empty($_POST['Usuarios']['PASSWORD_'])){
+		$model->addError('PASSWORD_', 'Password no puede quedar vacio');
+	}else{
+		$model->attributes=$_POST['Usuarios'];
+		$model->PASSWORD_=md5($_POST['Usuarios']['PASSWORD_']);
+		if($model->save())
+			$this->redirect(array('view','id'=>$model->ID_USUARIO));
+	}	
 }
-
 $this->render('update',array(
 'model'=>$model,
 ));

@@ -1,5 +1,8 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'id'=>'localidades-form',
+	'type' => 'horizontal',
+	'enableClientValidation'=>true,
+	'htmlOptions' => array('class' => 'well'), // for inset effect
 	'enableAjaxValidation'=>false,
 )); ?>
 

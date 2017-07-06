@@ -28,8 +28,7 @@ class Proveedores extends CActiveRecord
 	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
-		return array(
-			array('ID_PROVEEDOR', 'required'),
+		return array(			
 			array('ID_PROVEEDOR', 'numerical', 'integerOnly'=>true),
 			array('NOMBRE', 'length', 'max'=>80),
 			array('RFC', 'length', 'max'=>15),

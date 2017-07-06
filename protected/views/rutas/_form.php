@@ -1,5 +1,8 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'id'=>'rutas-form',
+	'type' => 'horizontal',
+	'enableClientValidation'=>true,
+	'htmlOptions' => array('class' => 'well'), // for inset effect
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -11,10 +14,10 @@
 
 	<?php
 	//paso 1 obtener lista
-	$models = Rutas::model()->findAll();
+	$models = cobratarios::model()->findAll();
 	//paso 2 se crea arreglo list data
 	$list = CHtml::listData($models, 
-                'ID_COBRATARIO', 'iDCOBRATARIO.NOMBRE');
+                'ID_COBRATARIO', 'NOMBRE');
 	//PASO 3 se crea el dropdownlist
 	echo $form->dropDownListGroup(
 			$model,

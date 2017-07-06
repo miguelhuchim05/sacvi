@@ -32,7 +32,7 @@ class TbButtonColumn extends CButtonColumn {
 	/**
 	 * @var string the delete button icon (defaults to 'trash').
 	 */
-	public $deleteButtonIcon = 'trash';
+	public $deleteButtonIcon = 'remove';
 
 	/**
 	 *### .initDefaultButtons()
