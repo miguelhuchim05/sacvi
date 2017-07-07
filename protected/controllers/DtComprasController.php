@@ -60,21 +60,37 @@ $this->render('view',array(
 public function actionrecordCU(){
 	header('Content-Type: application/json; charset="UTF-8"');
 	$send = array();
+	
 	if(isset($_POST['DtCompras']) && $_POST['DtCompras']['ID_DTCOMPRAS']!=null){
 		$model = $this->loadModel($_POST['DtCompras']['ID_DTCOMPRAS']);
 		$model->attributes=$_POST['DtCompras'];
-		$send = "Actualizado";
+		$send[0] = "Actualizado";
 	}else{
 		$model=new DtCompras;
 		if(isset($_POST['DtCompras'])){
 			$model->attributes=$_POST['DtCompras'];
-			$send = "Creado";
+			$send[0] = "Creado";
 		}
 	}
 	//respuesta 
-	if($model->save()){			
+	if($model->save()){
+		$data = $this->getSumImporte($model->ID_COMPRA);
+		if($this->updateCompra($model->ID_COMPRA, $data)){
+			$send[1] = $data;
+		}else{
+			$send[1] = 'Error: saldo o importe no actualizado';
+		}
 		echo CJSON::encode($send);
 	}
+}
+public function updateCompra($pk, $data){
+	$model=$this->loadModelHdCompras($pk);
+	$model->IMPORTE=$data;
+	$model->SALDO=$data;
+	if($model->save()){
+		return true;
+	}
+	return false;
 }
 /**
 * Creates a new model.
@@ -120,9 +136,18 @@ public function actionDelete($id)
 {
 if(Yii::app()->request->isPostRequest)
 {
+header('Content-Type: application/json; charset="UTF-8"');
+$send = array();
 // we only allow deletion via POST request
-$this->loadModel($id)->delete();
-
+$articulo = $this->loadModel($id);
+$articulo->delete();
+$data = $this->getSumImporte($articulo->ID_COMPRA);
+if($this->updateCompra($articulo->ID_COMPRA, $data)){
+	$send[0] = $data;
+}else{
+	$send[0] = 'Error: saldo o importe no actualizado';
+}
+echo CJSON::encode($send);
 // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 if(!isset($_GET['ajax']))
 $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -169,7 +194,13 @@ if($model===null)
 throw new CHttpException(404,'The requested page does not exist.');
 return $model;
 }
-
+public function loadModelHdCompras($id)
+{
+$model = HdCompras::model()->findByPk($id);
+if($model===null)
+throw new CHttpException(404,'The requested page does not exist.');
+return $model;
+}
 /**
 * Performs the AJAX validation.
 * @param CModel the model to be validated
@@ -182,4 +213,16 @@ echo CActiveForm::validate($model);
 Yii::app()->end();
 }
 }
+//operaciones matematicas by Miguel
+protected function getSumImporte($id){
+	$criteria = new CDbCriteria;
+	$criteria->select = array('round(sum(IMPORTE),2) AS IMPORTE');
+	$criteria->condition= 'ID_COMPRA = :total';
+	$criteria->params=(array(':total'=>$id));
+
+	$model=DtCompras::model()->findAll($criteria);
+	if($model===null)
+	throw new CHttpException(404,'The requested page does not exist.');
+	return $model[0]->IMPORTE;
 }
+}//end class

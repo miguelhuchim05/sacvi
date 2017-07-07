@@ -73,11 +73,12 @@ $('#DtCompras_CANTIDAD').change(function(){
 	    if (!hasError){	        
 	        $.post(form.attr('action'), form.serialize(), function(res){
 	            // Do stuff with your response data!	            
-	            $.notify(res,'success');
+	            $.notify(res[0],'info');
 	            if (res.result)	                
 	                console.log(res.data);
 	            $('#modalNew').modal('toggle');
-	            $.fn.yiiGridView.update('dt-compras-grid');	            
+	            $('#saldo').html('<strong>Saldo : </strong> $'+ res[1]);
+	            $.fn.yiiGridView.update('dt-compras-grid');  	            
 	        })
 	        .fail(function() {
 	            $.notify("Error",'error');
