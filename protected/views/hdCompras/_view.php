@@ -17,7 +17,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FECHA')); ?>:</b>
-	<?php echo CHtml::encode($data->FECHA); ?>
+	<?php echo CHtml::encode($data->FECHA_ELABORACION); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('IMPORTE')); ?>:</b>

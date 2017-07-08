@@ -11,7 +11,7 @@
 
 		<?php echo $form->textFieldGroup($model,'PLAZO_LIQUIDACION',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
-		<?php echo $form->datePickerGroup($model,'FECHA',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
+		<?php echo $form->datePickerGroup($model,'FECHA_RECEPCION',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
 
 		<?php echo $form->textFieldGroup($model,'IMPORTE',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 

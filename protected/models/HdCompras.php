@@ -8,7 +8,8 @@
  * @property integer $ID_PROVEEDOR
  * @property string $NO_FACTURA
  * @property integer $PLAZO_LIQUIDACION
- * @property string $FECHA
+ * @property string $FECHA_ELABORACION
+ * @property string $FECHA_RECEPCION
  * @property double $IMPORTE
  * @property double $SALDO
  * @property string $ESTATUS_PAGO
@@ -37,14 +38,15 @@ class HdCompras extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('ID_PROVEEDOR, NO_FACTURA, PLAZO_LIQUIDACION, FECHA_ELABORACION,  FECHA_RECEPCION', 'required'),
 			array('ID_PROVEEDOR, PLAZO_LIQUIDACION', 'numerical', 'integerOnly'=>true),
 			array('IMPORTE, SALDO', 'numerical'),
 			array('NO_FACTURA, ESTATUS_PAGO', 'length', 'max'=>25),
 			array('APLICADA', 'length', 'max'=>1),
-			array('FECHA', 'safe'),
+			array('FECHA_ELABORACION', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_COMPRA, ID_PROVEEDOR, NO_FACTURA, PLAZO_LIQUIDACION, FECHA, IMPORTE, SALDO, ESTATUS_PAGO, APLICADA', 'safe', 'on'=>'search'),
+			array('ID_COMPRA, ID_PROVEEDOR, NO_FACTURA, PLAZO_LIQUIDACION, FECHA_ELABORACION, FECHA_RECEPCION, IMPORTE, SALDO, ESTATUS_PAGO, APLICADA', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,10 +71,11 @@ class HdCompras extends CActiveRecord
 	{
 		return array(
 			'ID_COMPRA' => 'Id Compra',
-			'ID_PROVEEDOR' => 'Id Proveedor',
-			'NO_FACTURA' => 'No Factura',
-			'PLAZO_LIQUIDACION' => 'Plazo Liquidacion',
-			'FECHA' => 'Fecha',
+			'ID_PROVEEDOR' => 'Proveedor',
+			'NO_FACTURA' => 'No. de Factura',
+			'PLAZO_LIQUIDACION' => 'Plazo Liquidación',
+			'FECHA_ELABORACION' => 'Fecha Elaboración',
+			'FECHA_RECEPCION' => 'Fecha Recepción',
 			'IMPORTE' => 'Importe',
 			'SALDO' => 'Saldo',
 			'ESTATUS_PAGO' => 'Estatus Pago',
@@ -97,12 +100,13 @@ class HdCompras extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		$criteria->order= 'ID_COMPRA DESC';
 		$criteria->compare('ID_COMPRA',$this->ID_COMPRA);
 		$criteria->compare('ID_PROVEEDOR',$this->ID_PROVEEDOR);
 		$criteria->compare('NO_FACTURA',$this->NO_FACTURA,true);
 		$criteria->compare('PLAZO_LIQUIDACION',$this->PLAZO_LIQUIDACION);
-		$criteria->compare('FECHA',$this->FECHA,true);
+		$criteria->compare('FECHA_ELABORACION',$this->FECHA_ELABORACION,true);
+		$criteria->compare('FECHA_RECEPCION',$this->FECHA_RECEPCION,true);
 		$criteria->compare('IMPORTE',$this->IMPORTE);
 		$criteria->compare('SALDO',$this->SALDO);
 		$criteria->compare('ESTATUS_PAGO',$this->ESTATUS_PAGO,true);

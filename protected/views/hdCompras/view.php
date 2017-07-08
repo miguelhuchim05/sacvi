@@ -86,7 +86,7 @@ $('#agregarbutton').click(function(){
              <strong>No. Factura : </strong><?php echo $model->NO_FACTURA; ?>
          </span>         
           <span>
-             <strong>Fecha : </strong><?php echo $model->FECHA; ?>
+             <strong>Fecha : </strong><?php echo $model->FECHA_ELABORACION; ?>
          </span>
          <span id="saldo">
              <strong>Saldo : </strong>$<?php echo $model->SALDO; ?>
