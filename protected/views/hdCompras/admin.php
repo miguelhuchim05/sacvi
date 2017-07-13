@@ -23,14 +23,7 @@ return false;
 ");
 ?>
 
-<h1>Manage Hd Comprases</h1>
-
-<p>
-	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>
-		&lt;&gt;</b>
-	or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
+<h1>Administración de compras a proveedores</h1>
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
@@ -48,13 +41,35 @@ return false;
 		array('name'=>'ID_COMPRA', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
 		'iDPROVEEDOR.NOMBRE',
 		'NO_FACTURA',
-		//'PLAZO_LIQUIDACION',
+		'PLAZO_LIQUIDACION',
 		'FECHA_ELABORACION',
 		'FECHA_RECEPCION',
 		array('name'=>'IMPORTE', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->IMPORTE, "MXN")'),
-		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),
-		'ESTATUS_PAGO',
-		'APLICADA',
+		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),		
+		array('name'=>'ESTATUS_PAGO',
+			'headerHtmlOptions' => array('style' => 'width: 100px'),
+			'filter'=> array('PAGADA' => 'Pagado','CREDITO' => 'Credito'),
+			),
+		//'APLICADA',
+		array(
+			'class' => 'booster.widgets.TbEditableColumn',
+			'name' => 'APLICADA',
+			'headerHtmlOptions' => array('style' => 'width: 115px'),
+			'filter' => array('S'=>'Aplicada','N'=>'No apli...'),
+			'editable' => array(				
+				'type' => 'select',
+				'title' => 'Aplicar',
+				'url' => array('aplicar'),
+				'source'=> array('S'=>'Aplicada','N'=>'No aplicada'),
+				'options'  => array(    //custom display 					
+                     'display' => 'js: function(value, sourceData) {
+                          var selected = $.grep(sourceData, function(o){ return value == o.value; }),
+                              colors = {N: "gray", S: "blue"};
+                          $(this).text(selected[0].text).css("color", colors[value]);    
+                      }'
+                  ),//fin options
+				),
+			),
 array(
 'class'=>'booster.widgets.TbButtonColumn',
 'header'=>'Acciones',

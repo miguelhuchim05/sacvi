@@ -148,5 +148,16 @@ class TbEditableColumn extends CDataColumn
         echo '<td><div class="filter-container">';
         $this->renderFilterCellContent();
         echo '</div></td>';
-    }       
+    }
+    protected function renderFilterCellContent(){
+        $filterInputOptions['class'] = ' form-control';        
+        if (is_array($this->filter)) {
+            if (!isset($filterInputOptions['prompt'])) {
+                $filterInputOptions['prompt'] = '';
+            }
+            echo CHtml::activeDropDownList($this->grid->filter, $this->name, $this->filter, $filterInputOptions);
+        } else if ($this->filter === null) {
+            echo CHtml::activeTextField($this->grid->filter, $this->name, $filterInputOptions);
+        }
+    }
 }

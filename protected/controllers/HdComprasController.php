@@ -35,7 +35,7 @@ array('allow', // allow authenticated user to perform 'create' and 'update' acti
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
-'actions'=>array('admin','delete'),
+'actions'=>array('admin','delete', 'aplicar'),
 'users'=>array('admin'),
 ),
 array('deny',  // deny all users
@@ -108,7 +108,17 @@ $this->render('update',array(
 'model'=>$model,
 ));
 }
-
+public function actionAplicar(){
+	if($_POST['pk']){
+		$model=$this->loadModel($_POST['pk']);
+		$model->APLICADA=$_POST['value'];
+		if($model->update()){
+			echo CJSON::encode(array('success' => true));			
+		}else{
+			echo CJSON::encode(array('success' => false));
+		}
+	}
+}
 /**
 * Deletes a particular model.
 * If deletion is successful, the browser will be redirected to the 'admin' page.
