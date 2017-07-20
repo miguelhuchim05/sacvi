@@ -5,15 +5,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Rutas','url'=>array('index')),
-array('label'=>'Create Rutas','url'=>array('create')),
-array('label'=>'Update Rutas','url'=>array('update','id'=>$model->ID_RUTA)),
-array('label'=>'Delete Rutas','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_RUTA),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage Rutas','url'=>array('admin')),
+array('label'=>'Listar rutas','url'=>array('index')),
+array('label'=>'Crear ruta','url'=>array('create')),
+array('label'=>'Actualizar ruta actual','url'=>array('update','id'=>$model->ID_RUTA)),
+array('label'=>'Eliminar ruta actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_RUTA),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar rutas','url'=>array('admin')),
 );
 ?>
 
-<h1>View Rutas #<?php echo $model->ID_RUTA; ?></h1>
+<h3 class="page-header">View Rutas #<?php echo $model->ID_RUTA; ?></h3>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,

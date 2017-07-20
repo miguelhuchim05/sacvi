@@ -53,7 +53,7 @@ class Localidades extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_LOCALIDAD' => 'Id Localidad',
+			'ID_LOCALIDAD' => '#',
 			'NOMBRE' => 'Nombre',
 		);
 	}

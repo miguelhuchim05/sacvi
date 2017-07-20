@@ -5,15 +5,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Localidades','url'=>array('index')),
-array('label'=>'Create Localidades','url'=>array('create')),
-array('label'=>'Update Localidades','url'=>array('update','id'=>$model->ID_LOCALIDAD)),
-array('label'=>'Delete Localidades','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_LOCALIDAD),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage Localidades','url'=>array('admin')),
+array('label'=>'Listar localidades','url'=>array('index')),
+array('label'=>'Crear Localidad','url'=>array('create')),
+array('label'=>'Actualizar Localidad actual','url'=>array('update','id'=>$model->ID_LOCALIDAD)),
+array('label'=>'Eliminar Localidad actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_LOCALIDAD),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar localidades','url'=>array('admin')),
 );
 ?>
 
-<h1>View Localidades #<?php echo $model->ID_LOCALIDAD; ?></h1>
+<h3 class="page-header">Ver Localidad #<?php echo $model->ID_LOCALIDAD; ?></h3>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,

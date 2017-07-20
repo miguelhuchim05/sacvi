@@ -16,7 +16,7 @@ $('#DtCompras_CANTIDAD').change(function(){
 ");
 ?>
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
-	'action'=>Yii::app()->createUrl('//dtcompras/recordCU'),
+	'action'=>Yii::app()->createUrl('//dtCompras/recordCU'),
 	'type' => 'horizontal',	
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(

@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Proveedores','url'=>array('create')),
-array('label'=>'Manage Proveedores','url'=>array('admin')),
+array('label'=>'Crear proveedor','url'=>array('create')),
+array('label'=>'Administrar proveedores','url'=>array('admin')),
 );
 ?>
 
-<h1>Proveedores</h1>
+<h3 class="page-header">Proveedores</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

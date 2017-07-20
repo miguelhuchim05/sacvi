@@ -73,12 +73,12 @@ class HdCompras extends CActiveRecord
 			'ID_COMPRA' => 'Id Compra',
 			'ID_PROVEEDOR' => 'Proveedor',
 			'NO_FACTURA' => 'No. de Factura',
-			'PLAZO_LIQUIDACION' => 'Plazo Liquidación',
-			'FECHA_ELABORACION' => 'Fecha Elaboración',
-			'FECHA_RECEPCION' => 'Fecha Recepción',
+			'PLAZO_LIQUIDACION' => 'Plazo de Liquidación',
+			'FECHA_ELABORACION' => 'Fecha de Elaboración',
+			'FECHA_RECEPCION' => 'Fecha de Recepción',
 			'IMPORTE' => 'Importe',
 			'SALDO' => 'Saldo',
-			'ESTATUS_PAGO' => 'Estatus Pago',
+			'ESTATUS_PAGO' => 'Estado de Pago',
 			'APLICADA' => 'Aplicada',
 		);
 	}

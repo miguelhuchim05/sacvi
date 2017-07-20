@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Cobratarios','url'=>array('create')),
-array('label'=>'Manage Cobratarios','url'=>array('admin')),
+array('label'=>'Crear cobratarios','url'=>array('create')),
+array('label'=>'Administrar cobratarios','url'=>array('admin')),
 );
 ?>
 
-<h1>Cobratarioses</h1>
+<h3 class="page-header">Cobratarios</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Cobratarios','url'=>array('index')),
-array('label'=>'Manage Cobratarios','url'=>array('admin')),
+array('label'=>'Listar cobratarios','url'=>array('index')),
+array('label'=>'Administrar cobratarios','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cobratarios</h1>
+<h3 class="page-header">Crear Cobratarios</h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

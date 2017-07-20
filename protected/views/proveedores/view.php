@@ -5,15 +5,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Proveedores','url'=>array('index')),
-array('label'=>'Create Proveedores','url'=>array('create')),
-array('label'=>'Update Proveedores','url'=>array('update','id'=>$model->ID_PROVEEDOR)),
-array('label'=>'Delete Proveedores','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_PROVEEDOR),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage Proveedores','url'=>array('admin')),
+array('label'=>'Listar proveedores','url'=>array('index')),
+array('label'=>'Crear proveedor','url'=>array('create')),
+array('label'=>'Actualizar proveedor actual','url'=>array('update','id'=>$model->ID_PROVEEDOR)),
+array('label'=>'Eliminar proveedor actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_PROVEEDOR),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar proveedores','url'=>array('admin')),
 );
 ?>
 
-<h1>View Proveedores #<?php echo $model->ID_PROVEEDOR; ?></h1>
+<h3 class="page-header">Ver Proveedor #<?php echo $model->ID_PROVEEDOR; ?></h3>
 
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,

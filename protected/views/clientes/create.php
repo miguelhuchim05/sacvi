@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Clientes','url'=>array('index')),
-array('label'=>'Manage Clientes','url'=>array('admin')),
+array('label'=>'Listar clientes','url'=>array('index')),
+array('label'=>'Administrar clientes','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Clientes</h1>
+<h3 class="page-header">Crear cliente</h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

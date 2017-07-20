@@ -56,7 +56,7 @@ class Proveedores extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_PROVEEDOR' => 'Id Proveedor',
+			'ID_PROVEEDOR' => '#',
 			'NOMBRE' => 'Nombre',
 			'RFC' => 'RFC',
 		);

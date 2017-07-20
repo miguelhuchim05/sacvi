@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List Cobratarios','url'=>array('index')),
-	array('label'=>'Create Cobratarios','url'=>array('create')),
-	array('label'=>'View Cobratarios','url'=>array('view','id'=>$model->ID_COBRATARIO)),
-	array('label'=>'Manage Cobratarios','url'=>array('admin')),
+	array('label'=>'Listar cobratarios','url'=>array('index')),
+	array('label'=>'Crear cobratario','url'=>array('create')),
+	array('label'=>'Ver cobratario','url'=>array('view','id'=>$model->ID_COBRATARIO)),
+	array('label'=>'Administrar cobratarios','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update Cobratarios <?php echo $model->ID_COBRATARIO; ?></h1>
+	<h3 class="page-header">Actualizar Cobratario #<?php echo $model->ID_COBRATARIO; ?></h3>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

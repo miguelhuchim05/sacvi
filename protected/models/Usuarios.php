@@ -58,12 +58,12 @@ class Usuarios extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_USUARIO' => 'Id Usuario',
-			'FULL_NAME' => 'Full Name',
-			'USER_NAME' => 'User Name',
-			'PASSWORD_' => 'Password',
-			'DIRECCION' => 'Direccion',
-			'CELULAR' => 'Celular',
+			'ID_USUARIO' => '#',
+			'FULL_NAME' => 'Nombre completo',
+			'USER_NAME' => 'Nombre de usuario',
+			'PASSWORD_' => 'Contraseña',
+			'DIRECCION' => 'Dirección',
+			'CELULAR' => 'Número celular',
 		);
 	}
 

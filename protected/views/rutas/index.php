@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Rutas','url'=>array('create')),
-array('label'=>'Manage Rutas','url'=>array('admin')),
+array('label'=>'Crear ruta','url'=>array('create')),
+array('label'=>'Administrar rutas','url'=>array('admin')),
 );
 ?>
 
-<h1>Rutases</h1>
+<h3 class="page-header">Rutas</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

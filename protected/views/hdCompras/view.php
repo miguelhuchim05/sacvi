@@ -19,7 +19,7 @@ $colum=($status)?array(
     'template' => '{update}{delete}',
     'buttons' => array(
         'update' => array(
-            'url' => 'Yii::app()->createUrl("//dtcompras/update", array("id"=>$data->primarykey))',
+            'url' => 'Yii::app()->createUrl("//dtCompras/update", array("id"=>$data->primarykey))',
             'click' => 'function(){
                 var url = $(this).attr("href");
                 $.post(url)
@@ -53,12 +53,12 @@ $colum=($status)?array(
             'IMPORTE',)
 ;
 $this->menu=array(
-array('label'=>'List HdCompras','url'=>array('index')),
-array('label'=>'Create HdCompras','url'=>array('create')),
-array('label'=>'Update HdCompras','url'=>array('update','id'=>$model->ID_COMPRA)),
-array('label'=>'Delete HdCompras','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_COMPRA),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage HdCompras','url'=>array('admin')),
-array('label'=>'Pagar','url'=>array('update','id'=>$model->ID_COMPRA)),
+array('label'=>'Listar compras','url'=>array('index')),
+array('label'=>'Crear compra','url'=>array('create')),
+array('label'=>'Actualizar compra actual','url'=>array('update','id'=>$model->ID_COMPRA)),
+array('label'=>'Eliminar compra actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_COMPRA),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar compras','url'=>array('admin')),
+array('label'=>'Pagar factura','url'=>array('update','id'=>$model->ID_COMPRA)),
 );
 if($status)Yii::app()->clientScript->registerScript('emptymodal', "
 $('#agregarbutton').click(function(){
@@ -153,7 +153,7 @@ $('#agregarbutton').click(function(){
     <h4>Modal header</h4>
 </div>
 <div class="modal-body">
-    <?php if($status)$this->renderPartial('../dtcompras/_addArticulo',array(
+    <?php if($status)$this->renderPartial('../dtCompras/_addArticulo',array(
         'model'=>$modeldt,
     )); ?>
 </div>

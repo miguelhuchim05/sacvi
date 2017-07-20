@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List HdCompras','url'=>array('index')),
-array('label'=>'Create HdCompras','url'=>array('create')),
+array('label'=>'Listar compras','url'=>array('index')),
+array('label'=>'Crear compra','url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,8 +23,8 @@ return false;
 ");
 ?>
 
-<h1>Administración de compras a proveedores</h1>
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
+<h3 class="page-header">Administración de compras a proveedores</h3>
+<?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -37,9 +37,10 @@ return false;
 'dataProvider'=>$model->search(),
 'filter'=>$model,
 'responsiveTable'=>true,
+'summaryText'=>'Mostrar {start}-{end} de {count} resultados',
 'columns'=>array(		
-		array('name'=>'ID_COMPRA', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
-		'iDPROVEEDOR.NOMBRE',
+		//array('name'=>'ID_COMPRA', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 70px')),		
+		array('name'=>'iDPROVEEDOR.NOMBRE', 'header' => 'Proveedor'),
 		'NO_FACTURA',
 		'PLAZO_LIQUIDACION',
 		'FECHA_ELABORACION',

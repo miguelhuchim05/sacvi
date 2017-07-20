@@ -5,16 +5,14 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Clientes','url'=>array('index')),
-array('label'=>'Create Clientes','url'=>array('create')),
-array('label'=>'Update Clientes','url'=>array('update','id'=>$model->ID_CLIENTE)),
-array('label'=>'Delete Clientes','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_CLIENTE),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>'Manage Clientes','url'=>array('admin')),
+array('label'=>'Listar clientes','url'=>array('index')),
+array('label'=>'Crear cliente','url'=>array('create')),
+array('label'=>'Actualizar cliente  actual','url'=>array('update','id'=>$model->ID_CLIENTE)),
+array('label'=>'Eliminar cliente actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_CLIENTE),'confirm'=>'Are you sure you want to delete this item?')),
+array('label'=>'Administrar Clientes','url'=>array('admin')),
 );
 ?>
-
-<h1>View Clientes #<?php echo $model->ID_CLIENTE; ?></h1>
-
+<h3 class="page-header">Ver Cliente #<?php echo $model->ID_CLIENTE; ?></h3>
 <?php $this->widget('booster.widgets.TbDetailView',array(
 'data'=>$model,
 'attributes'=>array(

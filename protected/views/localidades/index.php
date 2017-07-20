@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Localidades','url'=>array('create')),
-array('label'=>'Manage Localidades','url'=>array('admin')),
+array('label'=>'Crear Localidad','url'=>array('create')),
+array('label'=>'Administrar Localidades','url'=>array('admin')),
 );
 ?>
 
-<h1>Localidades</h1>
+<h3 class="page-header">Localidades</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

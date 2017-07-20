@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create Usuarios','url'=>array('create')),
-array('label'=>'Manage Usuarios','url'=>array('admin')),
+array('label'=>'Crear usuario','url'=>array('create')),
+array('label'=>'Administrar usuarios','url'=>array('admin')),
 );
 ?>
 
-<h1>Usuarioses</h1>
+<h3 class="page-header">Usuarios</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

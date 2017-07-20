@@ -9141,3 +9141,12 @@ HTTP_REFERER=http://localhost:8080/sacvi/index.php/hdcompras/admin
 2017/07/13 21:11:50 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
 in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (71)
 in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/14 02:15:33 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (66)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/14 02:15:43 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (66)
+in C:\xampp\htdocs\sacvi\index.php (13)
+2017/07/14 02:16:00 [warning] [application] Failed to set unsafe attribute "ID_DTCOMPRAS" of "DtCompras".
+in C:\xampp\htdocs\sacvi\protected\controllers\DtComprasController.php (66)
+in C:\xampp\htdocs\sacvi\index.php (13)

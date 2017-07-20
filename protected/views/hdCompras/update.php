@@ -6,13 +6,13 @@ $this->breadcrumbs=array(
 );
 
 	$this->menu=array(
-	array('label'=>'List HdCompras','url'=>array('index')),
-	array('label'=>'Create HdCompras','url'=>array('create')),
-	array('label'=>'View HdCompras','url'=>array('view','id'=>$model->ID_COMPRA)),
-	array('label'=>'Manage HdCompras','url'=>array('admin')),
+	array('label'=>'Listar compras','url'=>array('index')),
+	array('label'=>'Crear compra','url'=>array('create')),
+	array('label'=>'Ver compra','url'=>array('view','id'=>$model->ID_COMPRA)),
+	array('label'=>'Administar compras','url'=>array('admin')),
 	);
 	?>
 
-	<h1>Update HdCompras <?php echo $model->ID_COMPRA; ?></h1>
+	<h3 class="page-header">Actualizar compra #<?php echo $model->ID_COMPRA; ?></h1>
 
 <?php echo $this->renderPartial('_form',array('model'=>$model)); ?>

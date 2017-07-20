@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Create HdCompras','url'=>array('create')),
-array('label'=>'Manage HdCompras','url'=>array('admin')),
+array('label'=>'Crear compra','url'=>array('create')),
+array('label'=>'Administrar compras','url'=>array('admin')),
 );
 ?>
 
-<h1>Hd Comprases</h1>
+<h3 class="page-header">Compras a proveedores</h3>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

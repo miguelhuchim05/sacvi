@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Proveedores','url'=>array('index')),
-array('label'=>'Manage Proveedores','url'=>array('admin')),
+array('label'=>'Listar proveedores','url'=>array('index')),
+array('label'=>'Administrar proveedores','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Proveedores</h1>
+<h3 class="page-header">Crear Proveedor</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

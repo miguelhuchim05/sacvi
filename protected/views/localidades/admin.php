@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Localidades','url'=>array('index')),
-array('label'=>'Create Localidades','url'=>array('create')),
+array('label'=>'Listar localidades','url'=>array('index')),
+array('label'=>'Crear Localidad','url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,15 +23,9 @@ return false;
 ");
 ?>
 
-<h1>Manage Localidades</h1>
+<h3 class="page-header">Administrar localidades</h3>
 
-<p>
-	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>
-		&lt;&gt;</b>
-	or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
+<?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -44,6 +38,7 @@ return false;
 'dataProvider'=>$model->search(),
 'filter'=>$model,
 'responsiveTable'=>true,
+'summaryText'=>'Mostrar {start}-{end} de {count} resultados',
 'columns'=>array(		
 		array('name'=>'ID_LOCALIDAD', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
 		'NOMBRE',

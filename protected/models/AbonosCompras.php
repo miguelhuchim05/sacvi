@@ -1,28 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "dt_compras".
+ * This is the model class for table "abonos_compras".
  *
- * The followings are the available columns in table 'dt_compras':
- * @property integer $ID_DTCOMPRAS
+ * The followings are the available columns in table 'abonos_compras':
+ * @property integer $ID_ABONO
  * @property integer $ID_COMPRA
- * @property integer $ID_ARTICULO
- * @property integer $CANTIDAD
- * @property double $PR_COSTO
+ * @property integer $NO_ABONO
+ * @property string $FECHA
  * @property double $IMPORTE
+ * @property string $STATUS
  *
  * The followings are the available model relations:
  * @property HdCompras $iDCOMPRA
- * @property Articulos $iDARTICULO
  */
-class DtCompras extends CActiveRecord
+class AbonosCompras extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'dt_compras';
+		return 'abonos_compras';
 	}
 
 	/**
@@ -33,12 +32,14 @@ class DtCompras extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_COMPRA, ID_ARTICULO', 'required'),
-			array('ID_COMPRA, ID_ARTICULO, CANTIDAD', 'numerical', 'integerOnly'=>true),
-			array('PR_COSTO, IMPORTE', 'numerical'),
+			array('ID_COMPRA', 'required'),
+			array('ID_COMPRA, NO_ABONO', 'numerical', 'integerOnly'=>true),
+			array('IMPORTE', 'numerical'),
+			array('STATUS', 'length', 'max'=>50),
+			array('FECHA', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_DTCOMPRAS, ID_COMPRA, ID_ARTICULO, CANTIDAD, PR_COSTO, IMPORTE', 'safe', 'on'=>'search'),
+			array('ID_ABONO, ID_COMPRA, NO_ABONO, FECHA, IMPORTE, STATUS', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,7 +52,6 @@ class DtCompras extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'iDCOMPRA' => array(self::BELONGS_TO, 'HdCompras', 'ID_COMPRA'),
-			'iDARTICULO' => array(self::BELONGS_TO, 'Articulos', 'ID_ARTICULO'),
 		);
 	}
 
@@ -61,12 +61,12 @@ class DtCompras extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ID_DTCOMPRAS' => '#',
+			'ID_ABONO' => 'Id Abono',
 			'ID_COMPRA' => 'Id Compra',
-			'ID_ARTICULO' => 'Articulo',
-			'CANTIDAD' => 'Cantidad',
-			'PR_COSTO' => 'Precio Costo',
+			'NO_ABONO' => 'No Abono',
+			'FECHA' => 'Fecha',
 			'IMPORTE' => 'Importe',
+			'STATUS' => 'Status',
 		);
 	}
 
@@ -88,12 +88,12 @@ class DtCompras extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ID_DTCOMPRAS',$this->ID_DTCOMPRAS);
+		$criteria->compare('ID_ABONO',$this->ID_ABONO);
 		$criteria->compare('ID_COMPRA',$this->ID_COMPRA);
-		$criteria->compare('ID_ARTICULO',$this->ID_ARTICULO);
-		$criteria->compare('CANTIDAD',$this->CANTIDAD);
-		$criteria->compare('PR_COSTO',$this->PR_COSTO);
+		$criteria->compare('NO_ABONO',$this->NO_ABONO);
+		$criteria->compare('FECHA',$this->FECHA,true);
 		$criteria->compare('IMPORTE',$this->IMPORTE);
+		$criteria->compare('STATUS',$this->STATUS,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -104,7 +104,7 @@ class DtCompras extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return DtCompras the static model class
+	 * @return AbonosCompras the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

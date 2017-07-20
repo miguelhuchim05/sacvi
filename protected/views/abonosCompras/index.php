@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Clientes',
+	'Abonos Comprases',
 );
 
 $this->menu=array(
-array('label'=>'Crear cliente','url'=>array('create')),
-array('label'=>'Administrar Clientes','url'=>array('admin')),
+array('label'=>'Create AbonosCompras','url'=>array('create')),
+array('label'=>'Manage AbonosCompras','url'=>array('admin')),
 );
 ?>
 
-<h3 class="page-header">Clientes</h3>
+<h1>Abonos Comprases</h1>
 
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,

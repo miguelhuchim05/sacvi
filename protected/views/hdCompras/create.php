@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List HdCompras','url'=>array('index')),
-array('label'=>'Manage HdCompras','url'=>array('admin')),
+array('label'=>'Listar compras','url'=>array('index')),
+array('label'=>'Admnistrar compras','url'=>array('admin')),
 );
 ?>
 
-<h1>Create HdCompras</h1>
+<h3 class="page-header">Crear compra</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

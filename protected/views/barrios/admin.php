@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'Manage Localidades','url'=>array('localidades/admin')),
+array('label'=>'Administrar Localidades','url'=>array('localidades/admin')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -21,10 +21,9 @@ return false;
 });
 ");
 ?>
+<h3 class="page-header">Administrar barrios</h3>
 
-<h1>Manage Barrios</h1>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
+<?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -37,9 +36,10 @@ return false;
 'dataProvider'=>$model->search(),
 'filter'=>$model,
 'responsiveTable'=>true,
-'columns'=>array(
-		'ID_BARRIO',
-		'iDLOCALIDAD.NOMBRE',
+'summaryText'=>'Mostrar {start}-{end} de {count} resultados',
+'columns'=>array(		
+		array('name'=>'ID_BARRIO', 'htmlOptions'=>array('style'=>'width: 70px')),		
+		array('name'=>'iDLOCALIDAD.NOMBRE', 'header' => 'Localidad'),
 		'NOMBRE',
 array(
 'class'=>'booster.widgets.TbButtonColumn',

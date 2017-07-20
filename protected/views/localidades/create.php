@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>'List Localidades','url'=>array('index')),
-array('label'=>'Manage Localidades','url'=>array('admin')),
+array('label'=>'Listar localidades','url'=>array('index')),
+array('label'=>'Administrar localidades','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Localidades</h1>
+<h3 class="page-header">Crear localidad</h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
