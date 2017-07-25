@@ -1,9 +1,4 @@
 <?php
-$this->breadcrumbs=array(
-	'Abonos Comprases'=>array('index'),
-	$model->ID_ABONO,
-);
-
 $this->menu=array(
 array('label'=>'List AbonosCompras','url'=>array('index')),
 array('label'=>'Create AbonosCompras','url'=>array('create')),

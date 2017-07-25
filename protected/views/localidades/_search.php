@@ -1,5 +1,7 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
 	'action'=>Yii::app()->createUrl($this->route),
+	'type' => 'inline',
+	'htmlOptions' => array('class' => 'well'), // for inset effect
 	'method'=>'get',
 )); ?>
 
@@ -11,7 +13,7 @@
 		<?php $this->widget('booster.widgets.TbButton', array(
 			'buttonType' => 'submit',
 			'context'=>'primary',
-			'label'=>'Search',
+			'label'=>'Buscar',
 		)); ?>
 	</div>
 

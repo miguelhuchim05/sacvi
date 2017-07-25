@@ -9,13 +9,13 @@
  * @property integer $ID_LOCALIDAD
  * @property string $NOMBRE
  * @property string $DIRECCION
+ * @property string $FECHA_CREACION
  * @property double $SALDO
  * @property double $EFECTIVIDAD
  *
  * The followings are the available model relations:
  * @property Barrios $iDBARRIO
  * @property Barrios $iDLOCALIDAD
- * @property HdVentas[] $hdVentases
  */
 class Clientes extends CActiveRecord
 {
@@ -35,13 +35,16 @@ class Clientes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_LOCALIDAD, ID_BARRIO','required'),
-			array('ID_CLIENTE, ID_BARRIO, ID_LOCALIDAD', 'numerical', 'integerOnly'=>true),
+			array('NOMBRE, ID_BARRIO, ID_LOCALIDAD, DIRECCION', 'required'),
 			array('SALDO, EFECTIVIDAD', 'numerical'),
 			array('NOMBRE, DIRECCION', 'length', 'max'=>80),
+			array('FECHA_CREACION','default',
+              'value'=>new CDbExpression('NOW()'),
+              'setOnEmpty'=>false,'on'=>'insert'),
+			array('FECHA_CREACION', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID_CLIENTE, ID_BARRIO, ID_LOCALIDAD, NOMBRE, DIRECCION, SALDO, EFECTIVIDAD', 'safe', 'on'=>'search'),
+			array('ID_CLIENTE, ID_BARRIO, ID_LOCALIDAD, NOMBRE, DIRECCION, FECHA_CREACION, SALDO, EFECTIVIDAD', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,7 +58,6 @@ class Clientes extends CActiveRecord
 		return array(
 			'iDBARRIO' => array(self::BELONGS_TO, 'Barrios', 'ID_BARRIO'),
 			'iDLOCALIDAD' => array(self::BELONGS_TO, 'Barrios', 'ID_LOCALIDAD'),
-			'hdVentases' => array(self::HAS_MANY, 'HdVentas', 'ID_CLIENTE'),
 		);
 	}
 
@@ -66,10 +68,11 @@ class Clientes extends CActiveRecord
 	{
 		return array(
 			'ID_CLIENTE' => '#',
-			'ID_BARRIO' => 'Id Barrio',
-			'ID_LOCALIDAD' => 'Id Localidad',
+			'ID_BARRIO' => 'Barrio',
+			'ID_LOCALIDAD' => 'Localidad',
 			'NOMBRE' => 'Nombre',
 			'DIRECCION' => 'Direccion',
+			'FECHA_CREACION' => 'Fecha de creacion',
 			'SALDO' => 'Saldo',
 			'EFECTIVIDAD' => 'Efectividad',
 		);
@@ -93,11 +96,13 @@ class Clientes extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->order= 'ID_CLIENTE DESC';
 		$criteria->compare('ID_CLIENTE',$this->ID_CLIENTE);
 		$criteria->compare('ID_BARRIO',$this->ID_BARRIO);
 		$criteria->compare('ID_LOCALIDAD',$this->ID_LOCALIDAD);
 		$criteria->compare('NOMBRE',$this->NOMBRE,true);
 		$criteria->compare('DIRECCION',$this->DIRECCION,true);
+		$criteria->compare('FECHA_CREACION',$this->FECHA_CREACION,true);
 		$criteria->compare('SALDO',$this->SALDO);
 		$criteria->compare('EFECTIVIDAD',$this->EFECTIVIDAD);
 

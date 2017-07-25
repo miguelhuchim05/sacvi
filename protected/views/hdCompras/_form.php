@@ -33,7 +33,7 @@
 			'PLAZO_LIQUIDACION',
 			array(				
 				'widgetOptions' => array(
-					'data' => array('1'=>'30 días', '2'=>'60 días', '3'=>'90 días', '4'=>'120 días'),
+					'data' => array('1'=>'30 días', '2'=>'60 días', '3'=>'90 días', '4'=>'120 días', '5'=>'150 días'),
 					'htmlOptions' => array('empty' => 'Seleccionar plazo para liquidar'),
 				)
 			)
@@ -62,7 +62,7 @@
 	<?php $this->widget('booster.widgets.TbButton', array(
 			'buttonType'=>'submit',
 			'context'=>'primary',
-			'label'=>$model->isNewRecord ? 'Create' : 'Save',
+			'label'=>$model->isNewRecord ? 'Crear' : 'Guardar',
 		)); ?>
 </div>
 

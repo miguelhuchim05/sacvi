@@ -78,7 +78,7 @@ $('#DtCompras_CANTIDAD').change(function(){
 	                console.log(res.data);
 	            $('#modalNew').modal('toggle');
 	            $('#saldo').html('<strong>Saldo : </strong> $'+ res[1]);
-	            $.fn.yiiGridView.update('dt-compras-grid');  	            
+	            $.fn.yiiGridView.update('dt-compras-grid');
 	        })
 	        .fail(function() {
 	            $.notify("Error",'error');

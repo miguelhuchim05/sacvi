@@ -40,12 +40,13 @@ return false;
 'responsiveTable'=>true,
 'summaryText'=>'Mostrar {start}-{end} de {count} resultados',
 'columns'=>array(		
-		array('name'=>'ID_CLIENTE', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
+		//array('name'=>'ID_CLIENTE', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 80px')),
 		'NOMBRE',
 		array('name'=>'iDBARRIO.iDLOCALIDAD.NOMBRE', 'header'=>'Localidad'),		
 		array('name'=>'iDBARRIO.NOMBRE', 'header'=>'Barrio'),
-		'DIRECCION',		
-		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),				
+		'DIRECCION',
+		'FECHA_CREACION',
+		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),	
 		/*
 		'EFECTIVIDAD',
 		*/

@@ -18,7 +18,14 @@
 
 	<?php echo $form->textFieldGroup($model,'CELULAR',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5','maxlength'=>20)))); ?>
 
-	<?php echo $form->datePickerGroup($model,'FECHA_INGRESO',array('widgetOptions'=>array('options'=>array(),'htmlOptions'=>array('class'=>'span5')), 'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
+	<?php echo $form->datePickerGroup($model,'FECHA_INGRESO',array('widgetOptions'=>array(
+	'options'=>array(
+		'language' => 'es',
+		'format' => 'yyyy-mm-dd',
+		'todayBtn' => true,
+		),
+	'htmlOptions'=>array('class'=>'span5')), 
+	'prepend'=>'<i class="glyphicon glyphicon-calendar"></i>', 'append'=>'Click on Month/Year to select a different Month/Year.')); ?>
 
 	<?php echo $form->textFieldGroup($model,'SUELDO',array('widgetOptions'=>array('htmlOptions'=>array('class'=>'span5')))); ?>
 
@@ -26,7 +33,7 @@
 	<?php $this->widget('booster.widgets.TbButton', array(
 			'buttonType'=>'submit',
 			'context'=>'primary',
-			'label'=>$model->isNewRecord ? 'Create' : 'Save',
+			'label'=>$model->isNewRecord ? 'Crear' : 'Guardar',
 		)); ?>
 </div>
 

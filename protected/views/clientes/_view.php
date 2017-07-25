@@ -20,6 +20,10 @@
 	<?php echo CHtml::encode($data->DIRECCION); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('FECHA_CREACION')); ?>:</b>
+	<?php echo CHtml::encode($data->FECHA_CREACION); ?>
+	<br />
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('SALDO')); ?>:</b>
 	<?php echo CHtml::encode($data->SALDO); ?>
 	<br />

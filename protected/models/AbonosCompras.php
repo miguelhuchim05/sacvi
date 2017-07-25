@@ -62,11 +62,11 @@ class AbonosCompras extends CActiveRecord
 	{
 		return array(
 			'ID_ABONO' => 'Id Abono',
-			'ID_COMPRA' => 'Id Compra',
-			'NO_ABONO' => 'No Abono',
-			'FECHA' => 'Fecha',
+			'ID_COMPRA' => 'Compra',
+			'NO_ABONO' => 'No. de abono',
+			'FECHA' => 'Fecha de pago',
 			'IMPORTE' => 'Importe',
-			'STATUS' => 'Status',
+			'STATUS' => 'Estatus',
 		);
 	}
 

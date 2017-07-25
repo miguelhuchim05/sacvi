@@ -23,7 +23,7 @@ $colum=($status)?array(
             'click' => 'function(){
                 var url = $(this).attr("href");
                 $.post(url)
-                .done(function(data){                    
+                .done(function(data){
                     $("input[name=\'DtCompras[ID_DTCOMPRAS]\'").val(data.ID_DTCOMPRAS);
                     $("input[name=\'DtCompras[ID_COMPRA]\'").val(data.ID_COMPRA);
                     $("select[name=\'DtCompras[ID_ARTICULO]\'").val(data.ID_ARTICULO);
@@ -58,7 +58,7 @@ array('label'=>'Crear compra','url'=>array('create')),
 array('label'=>'Actualizar compra actual','url'=>array('update','id'=>$model->ID_COMPRA)),
 array('label'=>'Eliminar compra actual','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->ID_COMPRA),'confirm'=>'Are you sure you want to delete this item?')),
 array('label'=>'Administrar compras','url'=>array('admin')),
-array('label'=>'Pagar factura','url'=>array('update','id'=>$model->ID_COMPRA)),
+array('label'=>'Pagar factura','url'=>array('abonos','id'=>$model->ID_COMPRA)),
 );
 if($status)Yii::app()->clientScript->registerScript('emptymodal', "
 $('#agregarbutton').click(function(){
@@ -70,23 +70,7 @@ $('#agregarbutton').click(function(){
 });
 ");
 ?>
-<h3>Detalles de compra #<?php echo $model->ID_COMPRA; ?>
-<?php
-/*$this->widget(
-    'booster.widgets.TbEditableField',
-    array(
-        'type' => 'select',
-        'model' => $model,
-        'attribute' => 'APLICADA', // $model->name will be         
-        'url' => '', //url for submit data
-        'source' => array('S'=>'Aplicada','N'=>'No aplicada'),
-        'options' => array(
-            'placement' => 'left'
-            ),
-    )
-);*/
-?>    
-</h3>
+<h3>Detalles de compra #<?php echo $model->ID_COMPRA; ?></h3>
 <div class="row text-center contact-info">
      <div class="col-lg-12 col-md-12 col-sm-12">
          <hr>

@@ -35,7 +35,7 @@ array('allow', // allow authenticated user to perform 'create' and 'update' acti
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
-'actions'=>array('admin','delete', 'aplicar'),
+'actions'=>array('admin','delete', 'aplicar', 'abonos'),
 'users'=>array('admin'),
 ),
 array('deny',  // deny all users
@@ -61,7 +61,12 @@ $this->render('view',array(
 'modeldt'=>$model,
 ));
 }
-
+public function actionAbonos($id){
+	$this->render('abonos',array(
+		'model' => $this->loadModel($id),
+		'modelacFilter'=>$this->loadModelAc($id),
+		));
+}
 /**
 * Creates a new model.
 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -113,7 +118,7 @@ public function actionAplicar(){
 		$model=$this->loadModel($_POST['pk']);
 		$model->APLICADA=$_POST['value'];
 		if($model->update()){
-			echo CJSON::encode(array('success' => true));			
+			echo CJSON::encode(array('success' => true));
 		}else{
 			echo CJSON::encode(array('success' => false));
 		}
@@ -182,6 +187,19 @@ public function loadModelDt($id)
 $dataProvider = new CActiveDataProvider('DtCompras',array(
 	'criteria' => array(
 		'condition'=>'ID_COMPRA='.$id,
+		)
+	));
+if($dataProvider===null){
+	throw new CHttpException(404,'The requested page does not exist.');
+}
+return $dataProvider;
+}
+public function loadModelAC($id)
+{
+$dataProvider = new CActiveDataProvider('AbonosCompras',array(
+	'criteria' => array(
+		'condition'=>'ID_COMPRA='.$id,
+		'order' => 'NO_ABONO ASC',
 		)
 	));
 if($dataProvider===null){

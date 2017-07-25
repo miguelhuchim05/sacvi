@@ -45,7 +45,7 @@ return false;
 		array(
 			'class'=>'booster.widgets.TbButtonColumn',
 			'header'=>'Barrio',
-			'htmlOptions' => array('style'=>'width:20%;text-align: center;'),			
+			'htmlOptions' => array('style'=>'width:20%;text-align: center;'),
 			'template'=>'{agregarBarrio}{verBarrios}',
 			'buttons'=>array(
 				'agregarBarrio' => array(
