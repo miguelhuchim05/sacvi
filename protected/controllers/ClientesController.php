@@ -31,7 +31,7 @@ array('allow',  // allow all users to perform 'index' and 'view' actions
 'users'=>array('*'),
 ),
 array('allow', // allow authenticated user to perform 'create' and 'update' actions
-'actions'=>array('create','update','getBarrios'),
+'actions'=>array('create','update','getBarrios', 'reports'),
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -54,7 +54,26 @@ $this->render('view',array(
 'model'=>$this->loadModel($id),
 ));
 }
-
+public function actionReports(){
+	$model = new Clientes;
+	if(isset($_POST['Clientes'])){		
+		$mPDF1 = Yii::app()->ePdf->mpdf('utf-8','LETTER','','',15,15,25,12,5,7);
+		$mPDF1->SetHTMLHeader('
+			<table width="100%" style="border-bottom: 1px solid #000000;vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: normal;"><tr>
+			<td width="33%">
+				<figure><img class="logo" src="'.Yii::app()->basePath.'/../img/logo_pdf.jpg" alt=""></figure>
+			</td>
+			<td width="33%" align="center" style="font-weight: bold; font-style: normal;">
+			<h2>ELECTROHOGAR DINORA</h2>
+			<h3>CLIENTES</h3>
+			</td>
+			<td width="33%" style="text-align: right; ">'.date('d/M/Y').'</td>
+			</tr></table>');
+		$mPDF1->WriteHTML($this->renderPartial('pdf', array(), true));
+		$mPDF1->Output('Responsiva-Usuario_.pdf','I');
+	}
+	$this->render('reportes',array('model'=>$model));
+}
 /**
 * Creates a new model.
 * If creation is successful, the browser will be redirected to the 'view' page.

@@ -34,6 +34,18 @@ return array(
 	'components'=>array(	
 		'booster' => array(
 			'class' => 'ext.booster.components.Booster'),
+		'ePdf' => array(
+			'class' => 'ext.yii-pdf.EYiiPdf',
+			'params' => array(
+				'mpdf' => array(
+					'librarySourcePath' => 'application.vendors.mpdf.*',
+					'constants' => array(
+						'_MPDF_TEMP_PATH' => Yii::getPathOfAlias('application.runtime'),
+						),
+					),
+				'class' => 'mpdf',
+				),
+		),//fin ePedf
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
