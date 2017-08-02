@@ -38,32 +38,16 @@
 		} 
 	</style>
 </head>
-<body>
+<body><?php //echo 'date_default_timezone_set: ' . date_default_timezone_get() . '<br />';?>
 <div class="main">
 <?php $this->widget('booster.widgets.TbGridView',array( 
 'dataProvider'=>$model,
 'template' => '{items}',
 'columns'=>array(
-        array('name'=>'iDBARRIO.iDLOCALIDAD.NOMBRE', 'header'=>'Localidad'),
-        array('name'=>'iDBARRIO.NOMBRE', 'header'=>'Barrio'),
-        array('name'=>'NOMBRE', 'header'=>'Cliente'),
-        'DIRECCION',
-        //'FECHA_CREACION',        
-        array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),
-        'EFECTIVIDAD',
+        'NOMBRE',
+		'RFC',
 ), 
-)); ?> 
-
-<table>
-<?php
-/*foreach ($model->getData() as $record) {
-	echo "<tr>";
-	echo "<td>".$record->NOMBRE."</td>";
-	echo "<td>".$record->iDBARRIO->iDLOCALIDAD->NOMBRE."</td>";	
-	echo "</tr>";
-}*/
-?>
-</table>
+)); ?>
 </div>
 </body>
 </html>

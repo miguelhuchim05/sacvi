@@ -7,6 +7,6 @@ return array(
 	'connectionString' => 'mysql:host=localhost;dbname=testdrive',
 	'emulatePrepare' => true,
 	'username' => 'root',
-	'password' => 'root',
+	'password' => 'cavoandroid',
 	'charset' => 'utf8',	
 );

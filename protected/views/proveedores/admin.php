@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 array('label'=>'Listar proveedores','url'=>array('index')),
 array('label'=>'Crear Proveedor','url'=>array('create')),
+array('label'=>'Reportes','url'=>array('reports')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

@@ -1,7 +1,6 @@
-<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
-	'id'=>'clientes-form',
+<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(	
 	'type' => 'inline',
-	'htmlOptions' => array('target' => '_blanck'), // for inset effect
+	'htmlOptions' => array('target' => '_blanck'),
 	'enableClientValidation'=>true,
 	'enableAjaxValidation'=>false,
 )); ?>
@@ -63,3 +62,5 @@
 </div>
 
 <?php $this->endWidget(); ?>
+<!-- $criteria->condition='ID_LOCALIDAD=:IdLocaliad';
+		$criteria->params=array(':IdLocaliad'=>$_POST['Clientes']['ID_LOCALIDAD']); -->

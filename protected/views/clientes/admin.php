@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 array('label'=>'Listar clientes','url'=>array('index')),
 array('label'=>'Crear cliente','url'=>array('create')),
-array('label'=>'Generar reportes','url'=>array('reports')),
+array('label'=>'Reportes','url'=>array('reports')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -47,7 +47,7 @@ return false;
 		array('name'=>'iDBARRIO.NOMBRE', 'header'=>'Barrio'),
 		'DIRECCION',
 		'FECHA_CREACION',
-		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),	
+		array('name'=>'SALDO', 'value'=>'Yii::app()->numberFormatter->formatCurrency($data->SALDO, "MXN")'),
 		/*
 		'EFECTIVIDAD',
 		*/

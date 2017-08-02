@@ -31,7 +31,7 @@ array('allow',  // allow all users to perform 'index' and 'view' actions
 'users'=>array('*'),
 ),
 array('allow', // allow authenticated user to perform 'create' and 'update' actions
-'actions'=>array('create','update'),
+'actions'=>array('create','update', 'reports'),
 'users'=>array('@'),
 ),
 array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -55,6 +55,37 @@ $this->render('view',array(
 ));
 }
 
+public function actionReports(){
+	if(isset($_GET['gen'])){
+		$dataProvider = new CActiveDataProvider('Proveedores',array(
+			'pagination' => false,
+			'sort' => false,
+			));
+
+		$mPDF1 = Yii::app()->ePdf->mpdf('utf-8','LETTER','','',15,15,25,12,5,7);
+		$mPDF1->SetHTMLHeader('
+			<table width="100%" style="border-bottom: 1px solid #000000;vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: normal;"><tr>
+			<td width="33%">
+				<figure><img class="logo" src="'.Yii::app()->basePath.'/../img/logo_pdf.jpg" alt=""></figure>
+			</td>
+			<td width="33%" align="center" style="font-weight: bold; font-style: normal;">
+			<h2>ELECTROHOGAR DINORA</h2>
+			<h3>Proveedores</h3>
+			</td>
+			<td width="33%" style="text-align: right; ">'.date('d/M/Y').'</td>
+			</tr></table>');	
+		$mPDF1->SetHTMLFooter('
+			<table width="100%" style="vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: italic;"><tr>
+			<td width="33%"></td>
+			<td width="33%" align="center" style="font-weight: bold; font-style: italic;"></td>
+			<td width="33%" style="text-align: right; ">Pág. {PAGENO}/{nbpg}</td>
+			</tr></table>');
+		$mPDF1->packTableData = true;
+		$mPDF1->WriteHTML($this->renderPartial('pdf', array('model' => $dataProvider), true));
+		$mPDF1->Output('Proveedores.pdf','I');
+	}
+	$this->render('reportes');
+}
 /**
 * Creates a new model.
 * If creation is successful, the browser will be redirected to the 'view' page.

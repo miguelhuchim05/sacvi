@@ -55,8 +55,17 @@ $this->render('view',array(
 ));
 }
 public function actionReports(){
+	set_time_limit(3000);	
 	$model = new Clientes;
-	if(isset($_POST['Clientes'])){		
+	if(isset($_POST['Clientes'])){
+		$criteria = new CDbCriteria;
+		$criteria->limit = 1000;
+		$dataProvider = new CActiveDataProvider('Clientes',array(
+			'criteria' => $criteria,			
+			'pagination' => false,
+			'sort' => false,
+			));
+
 		$mPDF1 = Yii::app()->ePdf->mpdf('utf-8','LETTER','','',15,15,25,12,5,7);
 		$mPDF1->SetHTMLHeader('
 			<table width="100%" style="border-bottom: 1px solid #000000;vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: normal;"><tr>
@@ -69,10 +78,17 @@ public function actionReports(){
 			</td>
 			<td width="33%" style="text-align: right; ">'.date('d/M/Y').'</td>
 			</tr></table>');
-		$mPDF1->WriteHTML($this->renderPartial('pdf', array(), true));
-		$mPDF1->Output('Responsiva-Usuario_.pdf','I');
+		$mPDF1->SetHTMLFooter('
+			<table width="100%" style="vertical-align: bottom; font-family: serif; font-size: 8pt; color: #000000; font-weight: bold; font-style: italic;"><tr>
+			<td width="33%"></td>
+			<td width="33%" align="center" style="font-weight: bold; font-style: italic;"></td>
+			<td width="33%" style="text-align: right; ">Pág. {PAGENO}/{nbpg}</td>
+			</tr></table>');
+		$mPDF1->packTableData = true;
+		$mPDF1->WriteHTML($this->renderPartial('pdf', array('model' => $dataProvider), true));
+		$mPDF1->Output('Clientes.pdf','I');
 	}
-	$this->render('reportes',array('model'=>$model));
+	$this->render('reportes',array('model'=> $model));
 }
 /**
 * Creates a new model.

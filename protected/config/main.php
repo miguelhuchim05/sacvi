@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'SACVI',
 	'theme' => 'template_sacvi',
+	'timeZone' => 'America/Mexico_City',
 	// preloading 'log' component
 	'preload'=>array('log', 'booster'),
 
@@ -31,7 +32,7 @@ return array(
 	),
 
 	// application components
-	'components'=>array(	
+	'components'=>array(
 		'booster' => array(
 			'class' => 'ext.booster.components.Booster'),
 		'ePdf' => array(
