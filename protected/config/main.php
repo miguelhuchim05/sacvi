@@ -17,9 +17,32 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.cruge.components.*',
+		'application.modules.cruge.extensions.crugemailer.*',
 	),
 
 	'modules'=>array(
+		'cruge' => array(
+			'tableprefix'=>'cruge_',
+			'availableAuthMethods'=>array('default'),
+			'availableAuthModes'=>array('username','email'),
+			//aseUrl'=>'http://coco.com/',
+ 			'debug'=> false,
+ 			'rbacSetupEnabled'=>true,
+ 			'allowUserAlways'=>false,
+			'useEncryptedPassword' => false,
+			'hash' => 'md5',
+			//'afterLoginUrl'=>'index.php',
+			'afterLogoutUrl'=>null,
+			'afterSessionExpiredUrl'=>null,
+			
+			'loginLayout'=>'//layouts/layerlogin',//listo
+			'registrationLayout'=>'//layouts/login',
+			'activateAccountLayout'=>'//layouts/column2',
+			'editProfileLayout'=>'//layouts/column2',
+			'useCGridViewClass'=>'booster.widgets.TbExtendedGridView',
+			'generalUserManagementLayout'=>'//layouts/column2',
+			),
 		// uncomment the following to enable the Gii tool		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
@@ -50,6 +73,8 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class' => 'application.modules.cruge.components.CrugeWebUser',
+			'loginUrl' => array('/cruge/ui/login'),
 		),
 
 		// uncomment the following to enable URLs in path-format		
@@ -70,9 +95,17 @@ return array(
 			'errorAction'=>YII_DEBUG ? null : 'site/error',
 		),
 		'authManager'=>array(
-            'class'=>'CDbAuthManager',
-            'connectionID'=>'db',
+            'class' => 'application.modules.cruge.components.CrugeAuthManager',
         ),
+        'crugemailer' => array(
+        	'class' => 'application.modules.cruge.components.CrugeMailer',
+        	'mailfrom' => 'migueltmpr20@gmail.com',
+        	'subjectprefix' => 'Recuperción de contraseña SACVI',
+        	'debug' => true,
+        	),
+        'format' => array(
+        	'datetimeFormat'=>"d M, Y h:m:s a",
+        	),
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
