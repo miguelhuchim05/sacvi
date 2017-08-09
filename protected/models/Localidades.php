@@ -76,6 +76,7 @@ class Localidades extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->order= 'ID_LOCALIDAD DESC';
 		$criteria->compare('ID_LOCALIDAD',$this->ID_LOCALIDAD);
 		$criteria->compare('NOMBRE',$this->NOMBRE,true);
 

@@ -57,9 +57,11 @@ $this->render('view',array(
 public function actionReports(){
 	set_time_limit(3000);	
 	$model = new Clientes;
-	if(isset($_POST['Clientes'])){
+	if(isset($_POST['Clientes']) && !empty($_POST['Clientes']['ID_LOCALIDAD'])){
 		$criteria = new CDbCriteria;
-		$criteria->limit = 1000;
+		$criteria->compare('ID_LOCALIDAD', $_POST['Clientes']['ID_LOCALIDAD']);
+		$criteria->compare('ID_BARRIO',$_POST['Clientes']['ID_BARRIO']);
+		$criteria->compare('SALDO', $_POST['Clientes']['SALDO']);
 		$dataProvider = new CActiveDataProvider('Clientes',array(
 			'criteria' => $criteria,			
 			'pagination' => false,
@@ -85,8 +87,10 @@ public function actionReports(){
 			<td width="33%" style="text-align: right; ">Pág. {PAGENO}/{nbpg}</td>
 			</tr></table>');
 		$mPDF1->packTableData = true;
-		$mPDF1->WriteHTML($this->renderPartial('pdf', array('model' => $dataProvider), true));
+		$mPDF1->WriteHTML($this->renderPartial('pdf', array('model' => $dataProvider, 'on' => !empty($_POST['Clientes']['ID_BARRIO'])), true));
 		$mPDF1->Output('Clientes.pdf','I');
+	}elseif(isset($_POST['Clientes'])){
+		$model->addError('Error',"Seleccionar localidad");
 	}
 	$this->render('reportes',array('model'=> $model));
 }

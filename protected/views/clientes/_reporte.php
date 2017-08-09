@@ -1,7 +1,7 @@
 <?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(	
 	'type' => 'inline',
 	'htmlOptions' => array('target' => '_blanck'),
-	'enableClientValidation'=>true,
+	'enableClientValidation'=> false,
 	'enableAjaxValidation'=>false,
 )); ?>
 
