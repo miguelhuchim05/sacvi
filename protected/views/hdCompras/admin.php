@@ -30,11 +30,25 @@ return false;
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
+<div align="right"> <!--pager-->
+	<?php 
+	$this->widget('ext.PageSize.EPageSize', array(
+	'gridViewId' => 'hd-compras-grid',
+	'beforeLabel' => 'Seleccionar cantidad: ',
+    'pageSize' => Yii::app()->request->getParam('pageSize',null),
+    'defaultPageSize' =>  10 ,
+    'pageSizeOptions'=> array(5=>5, 10=>10, 20=>20, 30=>30, 40=>40, 50=>50, 75=>75, 100=>100),
+    ));
 
+    $dataProvider = $model->search();
+    $pageSize = Yii::app()->user->getState('pageSize',10);
+    $dataProvider->getPagination()->setPageSize($pageSize);
+    ?>
+</div>
 <?php $this->widget('booster.widgets.TbGridView',array(
 'id'=>'hd-compras-grid',
 'type' => 'striped bordered condensed',
-'dataProvider'=>$model->search(),
+'dataProvider'=>$dataProvider,
 'filter'=>$model,
 'responsiveTable'=>true,
 'summaryText'=>'Mostrar {start}-{end} de {count} resultados',

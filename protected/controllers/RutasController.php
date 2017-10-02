@@ -127,9 +127,9 @@ throw new CHttpException(400,'Invalid request. Please do not repeat this request
 */
 public function actionIndex()
 {
-$dataProvider=new CActiveDataProvider('Rutas');
+$dataProvider=new Rutas('search');
 $this->render('index',array(
-'dataProvider'=>$dataProvider,
+'model'=>$dataProvider,
 ));
 }
 

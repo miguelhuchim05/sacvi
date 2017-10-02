@@ -31,7 +31,7 @@
 							'url' => CController::createUrl('clientes/getBarrios'),
 							'update' => '#'.CHtml::activeId($model,'ID_BARRIO'),
 						),//fin de ajax
-						'empty' => 'Seleccionar cobratario',
+						'empty' => 'Seleccionar localidad',
 					),//fin de options
 				)
 			)

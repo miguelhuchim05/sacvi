@@ -1,8 +1,4 @@
-<div class="view">
-
-		<b><?php echo CHtml::encode($data->getAttributeLabel('ID_COBRATARIO')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ID_COBRATARIO),array('view','id'=>$data->ID_COBRATARIO)); ?>
-	<br />
+<div class="list-group-item">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('NOMBRE')); ?>:</b>
 	<?php echo CHtml::encode($data->NOMBRE); ?>

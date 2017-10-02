@@ -1,15 +1,11 @@
-<div class="view">
-
-		<b><?php echo CHtml::encode($data->getAttributeLabel('ID_CLIENTE')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ID_CLIENTE),array('view','id'=>$data->ID_CLIENTE)); ?>
-	<br />
+<div class="list-group-item">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ID_BARRIO')); ?>:</b>
-	<?php echo CHtml::encode($data->ID_BARRIO); ?>
+	<?php echo CHtml::encode($data->iDBARRIO->iDLOCALIDAD->NOMBRE); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ID_LOCALIDAD')); ?>:</b>
-	<?php echo CHtml::encode($data->ID_LOCALIDAD); ?>
+	<?php echo CHtml::encode($data->iDBARRIO->NOMBRE); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('NOMBRE')); ?>:</b>
@@ -33,4 +29,4 @@
 	<br />
 
 
-</div>
+</div> 

@@ -149,9 +149,13 @@ throw new CHttpException(400,'Invalid request. Please do not repeat this request
 */
 public function actionIndex()
 {
-$dataProvider=new CActiveDataProvider('HdCompras');
+$criteria=new CDbCriteria;
+$criteria->order= 'ID_COMPRA DESC';
+$dataProvider=new CActiveDataProvider('HdCompras', array(
+			'criteria'=>$criteria,
+		));
 $this->render('index',array(
-'dataProvider'=>$dataProvider,
+'model'=>$dataProvider,
 ));
 }
 

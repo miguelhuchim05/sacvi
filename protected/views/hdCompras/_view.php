@@ -1,11 +1,7 @@
-<div class="view">
-
-		<b><?php echo CHtml::encode($data->getAttributeLabel('ID_COMPRA')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->ID_COMPRA),array('view','id'=>$data->ID_COMPRA)); ?>
-	<br />
+<div class="list-group-item">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ID_PROVEEDOR')); ?>:</b>
-	<?php echo CHtml::encode($data->ID_PROVEEDOR); ?>
+	<?php echo CHtml::encode($data->iDPROVEEDOR->NOMBRE); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('NO_FACTURA')); ?>:</b>
@@ -28,15 +24,11 @@
 	<?php echo CHtml::encode($data->SALDO); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ESTATUS_PAGO')); ?>:</b>
 	<?php echo CHtml::encode($data->ESTATUS_PAGO); ?>
 	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('APLICADA')); ?>:</b>
 	<?php echo CHtml::encode($data->APLICADA); ?>
 	<br />
-
-	*/ ?>
 
 </div>
