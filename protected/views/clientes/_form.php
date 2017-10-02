@@ -43,6 +43,7 @@ if(!$model->isNewRecord){
 							'type' => 'POST',
 							'url' => CController::createUrl('clientes/getBarrios'),
 							'update' => '#'.CHtml::activeId($model,'ID_BARRIO'),
+							'complete' => 'function(data){$("select[name=\'Clientes[ID_BARRIO]\'").val('.$model->ID_BARRIO.');}',
 						),//fin de ajax
 						'empty' => 'Seleccionar cobratario',
 					),//fin de options

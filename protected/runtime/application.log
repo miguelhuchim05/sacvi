@@ -14646,3 +14646,278 @@ Stack trace:
 REQUEST_URI=/sacvi/index.php/clientes/reports
 HTTP_REFERER=http://localhost/sacvi/index.php/clientes/reports
 ---
+2017/10/02 01:27:39 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(209): CModule->getComponent('user')
+#3 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(132): CWebApplication->getUser()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('localidades/adm...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sacvi/index.php/localidades/admin
+HTTP_REFERER=http://localhost/sacvi/index.php/cruge/ui/login
+---
+2017/10/02 01:27:43 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(209): CModule->getComponent('user')
+#3 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(132): CWebApplication->getUser()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('localidades/adm...')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sacvi/index.php/localidades/admin
+HTTP_REFERER=http://localhost/sacvi/index.php/cruge/ui/login
+---
+2017/10/02 01:28:03 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/10/02 01:28:10 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/10/02 01:28:55 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/10/02 01:29:01 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/10/02 01:29:40 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+HTTP_REFERER=http://localhost/
+---
+2017/10/02 01:30:02 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+---
+2017/10/02 01:31:42 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+HTTP_REFERER=http://localhost/
+---
+2017/10/02 01:32:58 [error] [exception.CException] CException: Alias "application.modules.cruge.components.CrugeWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(197): YiiBase::import('application.mod...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\sacvi\themes\template_sacvi\views\layouts\main.php(25): CModule->__get('user')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(215): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\sacvi\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\sacvi\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\sacvi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sacvi/
+HTTP_REFERER=http://localhost/
+---
