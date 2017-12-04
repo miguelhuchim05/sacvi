@@ -1,4 +1,4 @@
-<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array(
+<?php $form=$this->beginWidget('booster.widgets.TbActiveForm',array( 
 	'id'=>'cobratarios-form',
 	'type' => 'horizontal',
 	'enableClientValidation'=>true,

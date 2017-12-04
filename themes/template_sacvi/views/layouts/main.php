@@ -30,7 +30,7 @@ $this->widget(
                             array('label' => 'Clientes','url' => Yii::app()->createUrl("clientes/admin"),),
                             array('label' => 'Rutas','url' => Yii::app()->createUrl("rutas/admin"),),
                             array('label' => 'Proveedores','url' => Yii::app()->createUrl("proveedores/admin"),),
-                            //array('label' => 'Articulos','url' => '#',),
+                            array('label' => 'Articulos','url' => Yii::app()->createUrl("articulos/admin"),),
                             //array('label' => 'Cuentas bancarias','url' => '#',),
                             array('label' => 'Cobratarios','url' => Yii::app()->createUrl("cobratarios/admin"),),
                             )

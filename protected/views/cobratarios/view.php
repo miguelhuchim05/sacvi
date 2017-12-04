@@ -1,4 +1,4 @@
-<?php
+<?php 
 $this->breadcrumbs=array(
 	'Cobratarioses'=>array('index'),
 	$model->ID_COBRATARIO,

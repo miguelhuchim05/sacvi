@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Rutases'=>array('index'),
+	'Articuloses'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-array('label'=>'Listar rutas','url'=>array('index')),
-array('label'=>'Crear ruta','url'=>array('create')),
+array('label'=>'Listar articulos','url'=>array('index')),
+array('label'=>'Crear articulo','url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -15,7 +15,7 @@ $('.search-form').toggle();
 return false;
 });
 $('.search-form form').submit(function(){
-$.fn.yiiGridView.update('rutas-grid', {
+$.fn.yiiGridView.update('articulos-grid', {
 data: $(this).serialize()
 });
 return false;
@@ -23,7 +23,7 @@ return false;
 ");
 ?>
 
-<h3 class="page-header">Administrar Rutas</h3>
+<h3 class="page-header">Administrar Articulos</h3>
 
 <?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button btn')); ?>
 <div class="search-form" style="display:none">
@@ -31,10 +31,11 @@ return false;
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
+
 <div align="right"> <!--pager-->
 	<?php 
 	$this->widget('ext.PageSize.EPageSize', array(
-	'gridViewId' => 'rutas-grid',
+	'gridViewId' => 'articulos-grid',
 	'beforeLabel' => 'Seleccionar cantidad: ',
     'pageSize' => Yii::app()->request->getParam('pageSize',null),
     'defaultPageSize' =>  10 ,
@@ -46,16 +47,22 @@ return false;
     $dataProvider->getPagination()->setPageSize($pageSize);
     ?>
 </div>
-<?php $this->widget('booster.widgets.TbExtendedGridView',array(
-'id'=>'rutas-grid',
+
+<?php $this->widget('booster.widgets.TbGridView',array(
+'id'=>'articulos-grid',
 'type' => 'striped bordered condensed',
 'dataProvider'=>$dataProvider,
 'filter'=>$model,
 'responsiveTable'=>true,
 'summaryText'=>'Mostrar {start}-{end} de {count} resultados',
 'columns'=>array(
-		'NOMBRE',
-		array('name'=>'iDCOBRATARIO.NOMBRE', 'header'=>'Cobratario'),
+		'DESCRIPCION',
+		'MODELO',
+		'MARCA',
+		'COLOR',
+		'PR_COSTO',
+		'PORCENT_UTILIDAD',
+		'PR_VENTA',
 array(
 'class'=>'booster.widgets.TbButtonColumn',
 'header'=>'Acciones',

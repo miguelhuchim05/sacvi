@@ -1,19 +1,19 @@
 <?php 
 $this->breadcrumbs=array(
-	'Cobratarioses',
+	'Articuloses',
 );
 
 $this->menu=array(
-array('label'=>'Crear cobratario','url'=>array('create')),
-array('label'=>'Administrar cobratarios','url'=>array('admin')),
+array('label'=>'Crear articulo','url'=>array('create')),
+array('label'=>'Administrar articulos','url'=>array('admin')),
 );
 ?>
 
-<h3 class="page-header">Cobratarios</h3>
+<h3 class="page-header">Articulos</h3>
 <div align="left"> <!--pager-->
 	<?php 
 	$this->widget('ext.PageSize.EPageSize', array(
-	'listViewId' => 'cobratarios-list',
+	'listViewId' => 'articulos-list',
 	'beforeLabel' => 'Seleccionar cantidad: ',
     'pageSize' => Yii::app()->request->getParam('pageSize',null),
     'defaultPageSize' =>  10 ,
@@ -25,8 +25,9 @@ array('label'=>'Administrar cobratarios','url'=>array('admin')),
     $dataProvider->getPagination()->setPageSize($pageSize);
     ?>
 </div>
+
 <?php $this->widget('booster.widgets.TbListView',array(
-'id' => 'cobratarios-list',
+'id' => 'articulos-list',
 'itemsCssClass' => 'list-group',
 'summaryText' => 'Mostrar {start}-{end} de {count} resultados',
 'dataProvider'=>$dataProvider,
